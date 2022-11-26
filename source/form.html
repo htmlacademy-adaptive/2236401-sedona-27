@@ -7,13 +7,15 @@
   <title>HTML Academy: Седона</title>
 </head>
 <body class="page__body">
-  <header class="main-header">
-    <a  class="main-header__logo" href="#">
-      <img src="img/logo-sedona.svg"  width="185" height="96" alt="Городок Седона.">
+  <header class="page__header main-header">
+    <a  class="main-header__logo logo-sedona" href="#">
+      <img class="logo-sedona__image" src="img/logo-sedona.svg"  width="185" height="96" alt="Городок Седона.">
     </a>
-    <nav class="main-nav">
+    <nav class="main-header__nav main-nav">
       <button class="main-nav__toogle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
+        <span class="visually-hidden">
+          Открыть меню
+        </span>
       </button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
@@ -43,8 +45,8 @@
       </div>
     </nav>
   </header>
-  <main class="main-container">
-    <section class="intro">
+  <main class="page__main main-container">
+    <section class="main-container__intro intro">
       <h1 class="visually-hidden">
         Добро пожаловать в Седону!
       </h1>
@@ -53,7 +55,7 @@
           alt="Добро пожаловать в великолепную Седону.">
       </div>
     </section>
-    <section class="review">
+    <section class="main-container__review review">
       <header class="review__header">
         <h2 class="review__title">
           Оставьте свой отзыв
@@ -62,7 +64,7 @@
           Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
         </p>
       </header>
-      <div class="form-wrapper">
+      <div class="review__form review-form">
         <form class="review-form" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="review-form__group form-initials">
             <legend class="form-initials__title">
@@ -188,31 +190,41 @@
     </section>
   </main>
 
-  <footer class="main-footer">
+  <footer class="page__footer main-footer">
     <div class="main-footer__wrapper">
       <span class="main-footer__hashtag">
         #visitsedona
       </span>
       <ul class="main-footer__social social">
         <li class="social__item">
-          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+          <span class="visually-hidden">
             Мы в Вконтакте
+          </span>
+          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+          <span class="visually-hidden">
             Мы в Телеграме
+          </span>
+          <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+          <span class="visually-hidden">
             Мы в Ютубе
+          </span>
+          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
           </a>
         </li>
       </ul>
       <div class="main-footer__copyright copyright">
-        <b class="copyright__text">Разработано:</b>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">Логотип HTML-академии</a>
+        <b class="copyright__text">
+          Разработано:
+        </b>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          Логотип HTML-академии
+        </a>
       </div>
     </div>
     <section class="modal-alert">

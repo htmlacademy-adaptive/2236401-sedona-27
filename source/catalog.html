@@ -9,13 +9,15 @@
 </head>
 
 <body class="page__body">
-  <header class="main-header">
-    <a class="main-header__logo" href="#">
-      <img src="img/logo-sedona.svg" width="185" height="96" alt="Городок Седона.">
+  <header class="page__header main-header">
+    <a class="main-header__logo logo-sedona" href="#">
+      <img class="logo-sedona__image" src="img/logo-sedona.svg" width="185" height="96" alt="Городок Седона.">
     </a>
-    <nav class="main-nav">
+    <nav class="main-header__nav main-nav">
       <button class="main-nav__toogle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
+        <span class="visually-hidden">
+          Открыть меню
+        </span>
       </button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
@@ -45,8 +47,8 @@
       </div>
     </nav>
   </header>
-  <main class="main-container">
-    <section class="intro">
+  <main class="page__main main-container">
+    <section class="main-container__intro intro">
       <h1 class="visually-hidden">
         Добро пожаловать в Седону!
       </h1>
@@ -55,7 +57,7 @@
           alt="Добро пожаловать в великолепную Седону.">
       </div>
     </section>
-    <section class="gallery">
+    <section class="main-container__gallery gallery">
       <header class="gallery__header">
         <h2 class="gallery__title">
           Фото и видео
@@ -65,20 +67,20 @@
         </p>
       </header>
       <ul class="gallery__list sights">
-        <li class="sights__item">
-          <figure class="sights__view">
-            <p class="sights__image">
-              <img src="img/non-native-spaces.jpg" width="280" height="280"
+        <li class="sights__item card">
+          <figure class="card__view">
+            <p class="card__image image">
+              <img class="image__unit" src="img/non-native-spaces.jpg" width="280" height="280"
                 alt="Удивительные просторы Седоны на рассвете.">
             </p>
-            <figcaption class="sights__caption">
-              <b class="sights__title">
+            <figcaption class="card__caption">
+              <b class="card__title">
                 Неродные просторы
               </b>
-              <p class="sights__author">
+              <p class="card__author">
                 Автор фото: Борис
               </p>
-              <div class="sights__actions count-likes">
+              <div class="card__actions count-likes">
                 <button class="count-likes__icon" type="button">
                 </button>
                 <span class="count-likes__sum">
@@ -88,19 +90,19 @@
             </figcaption>
           </figure>
         </li>
-        <li class="sights__item">
-          <figure class="sights__view">
-            <p class="sights__image">
-              <img src="img/local-vegetation.jpg" width="280" height="280" alt="Редкие виды местных растений.">
+        <li class="sights__item card">
+          <figure class="card__view">
+            <p class="card__image image">
+              <img class="image__unit" src="img/local-vegetation.jpg" width="280" height="280" alt="Редкие виды местных растений.">
             </p>
-            <figcaption class="sights__caption">
-              <b class="sights__title">
+            <figcaption class="card__caption">
+              <b class="card__title">
                 Местная растительность
               </b>
-              <p class="sights__author">
+              <p class="card__author">
                 Автор фото: Сергей
               </p>
-              <div class="sights__actions count-likes">
+              <div class="card__actions count-likes">
                 <button class="count-likes__icon" type="button">
                 </button>
                 <span class="count-likes__sum">
@@ -110,19 +112,19 @@
             </figcaption>
           </figure>
         </li>
-        <li class="sights__item">
-          <figure class="sights__view">
-            <p class="sights__image">
-              <img src="img/road-to-north.jpg" width="280" height="280" alt="Обзор дороги в холмистой местности.">
+        <li class="sights__item card">
+          <figure class="card__view">
+            <p class="card__image image">
+              <img class="image__unit" src="img/road-to-north.jpg" width="280" height="280" alt="Обзор дороги в холмистой местности.">
             </p>
-            <figcaption class="sights__caption">
-              <b class="sights__title">
+            <figcaption class="card__caption">
+              <b class="card__title">
                 Дорога на север
               </b>
-              <p class="sights__author">
+              <p class="card__author">
                 Автор фото: Пётр
               </p>
-              <div class="sights__actions count-likes">
+              <div class="card__actions count-likes">
                 <button class="count-likes__icon" type="button">
                 </button>
                 <span class="count-likes__sum">
@@ -132,20 +134,20 @@
             </figcaption>
           </figure>
         </li>
-        <li class="sights__item">
-          <figure class="sights__view">
-            <p class="sights__image">
-              <img src="img/devil-bridge.jpg" width="280" height="280"
+        <li class="sights__item card">
+          <figure class="card__view">
+            <p class="card__image image">
+              <img class="image__unit" src="img/devil-bridge.jpg" width="280" height="280"
                 alt="Скалы, известные как мост Дьявола с высоты тичьего полёта.">
             </p>
-            <figcaption class="sights__caption">
-              <b class="sights__title">
+            <figcaption class="card__caption">
+              <b class="card__title">
                 Мост Дьявола
               </b>
-              <p class="sights__author">
+              <p class="card__author">
                 Автор фото: Антон
               </p>
-              <div class="sights__actions count-likes">
+              <div class="card__actions count-likes">
                 <button class="count-likes__icon" type="button">
                 </button>
                 <span class="count-likes__sum">
@@ -169,36 +171,46 @@
           Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
         </p>
       </div>
-      <div class="video-suggestion__image">
-        <img src="img/video-suggestion.jpg" width="280" height="177" alt="Видеопрезентация города Седона.">
+      <div class="video-suggestion__image image-suggestion">
+        <img class="image-suggestion__unit" src="img/video-suggestion.jpg" width="280" height="177" alt="Видеопрезентация города Седона.">
       </div>
     </section>
   </main>
-  <footer class="main-footer">
+  <footer class="page__footer main-footer">
     <div class="main-footer__wrapper">
       <span class="main-footer__hashtag">
         #visitsedona
       </span>
       <ul class="main-footer__social social">
         <li class="social__item">
-          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+          <span class="visually-hidden">
             Мы в Вконтакте
+          </span>
+          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+          <span class="visually-hidden">
             Мы в Телеграме
+          </span>
+          <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+          <span class="visually-hidden">
             Мы в Ютубе
+          </span>
+          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
           </a>
         </li>
       </ul>
       <div class="main-footer__copyright copyright">
-        <b class="copyright__text">Разработано:</b>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">Логотип HTML-академии</a>
+        <b class="copyright__text">
+          Разработано:
+        </b>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          Логотип HTML-академии
+        </a>
       </div>
     </div>
   </footer>
