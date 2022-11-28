@@ -1,0 +1,53 @@
+.form-control__mark {
+  position: relative;
+  top: 15px;
+  left: 0;
+  width: 46px;
+  height: 46px;
+  background-color: @color-background-second;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.form-control__input[type="radio"] + .form-control__mark {
+  border-radius: 50%;
+}
+
+.form-control__input[type="radio"]:checked + .form-control__mark::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 16px;
+  height: 16px;
+  background-color: @color-basic-tertiary;
+  border-radius: 50%;
+  content: "";
+}
+
+.form-control__input[type="checkbox"]:checked + .form-control__mark::before,
+.form-control__input[type="checkbox"]:checked + .form-control__mark::after {
+  position: absolute;
+  height: 3px;
+  background-color: @color-basic-tertiary;
+  content: "";
+}
+
+.form-control__input[type="checkbox"]:checked + .form-control__mark::before {
+  transform: rotate(-50deg);
+  width: 22px;
+  left: 17px;
+  top: 22px;
+}
+
+.form-control__input[type="checkbox"]:checked + .form-control__mark::after {
+  transform: rotate(45deg);
+  width: 14px;
+  left: 9px;
+  top: 27px;
+}
+
+.form-control__value {
+  padding-left: 16px;
+}
