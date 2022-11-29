@@ -12,6 +12,7 @@
 
   @media (min-width: @tablet-width) {
     width: 100%;
+    border-top: none;
   }
 }
 
@@ -33,6 +34,10 @@
   font-weight: 700;
   margin-bottom: 20px;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 40px;
+  }
 }
 
 .review-form__checkradio {
@@ -75,10 +80,10 @@
   color: rgba(51, 51, 51, 0.6);
   text-align: right;
   padding: 0 20px;
+}
 
-  @media (min-width: @tablet-width) {
-    position: absolute;
-    right: 0;
-    bottom: -25%;
+@media (min-width: @tablet-width) {
+  .review-form--has-border {
+    border-top: 1px solid #dbdbdb;
   }
 }
