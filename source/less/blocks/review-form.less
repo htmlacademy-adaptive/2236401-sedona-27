@@ -1,7 +1,25 @@
+@media (min-width: @tablet-width) {
+  .review-form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
 .review-form__container {
   border-top: 1px solid @color-input-hover;
   padding: 24px 20px;
   color: @color-basic-second;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .review-form__container--is-half {
+    width: 50%;
+    box-sizing: border-box;
+  }
 }
 
 .review-form__group {
@@ -25,6 +43,29 @@
   margin: 0;
   padding: 0;
   font-weight: 700;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0;
+  }
+}
+
+.review-form__item {
+  @media (min-width: @tablet-width) {
+    width: 50%;
+    box-sizing: border-box;
+  }
+
+  @media (min-width: @desctop-width) {
+    width: calc(100% / 3);
+  }
+}
+
+@media (min-width: @desctop-width) {
+  .review-form__item--attractions {
+    width: calc(100% / 4);
+  }
 }
 
 .review-form__footnote {
@@ -34,4 +75,10 @@
   color: rgba(51, 51, 51, 0.6);
   text-align: right;
   padding: 0 20px;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    right: 0;
+    bottom: -25%;
+  }
 }

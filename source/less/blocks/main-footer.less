@@ -3,6 +3,12 @@
   margin: 0 auto;
   color: @color-basic-second;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+  }
 }
 
 .main-footer__hashtag {
@@ -12,4 +18,16 @@
   line-height: 26px;
   text-transform: uppercase;
   margin-bottom: 33px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
+.main-footer__social {
+  margin-bottom: 40px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+  }
 }

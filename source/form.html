@@ -32,8 +32,8 @@
           </li>
         </ul>
         <ul class="main-nav__list site-list site-list--user-interface">
-          <li class="site-list__item site-list__item--current">
-            <a class="site-list__link button">
+          <li class="site-list__item">
+            <a class="site-list__link button site-list__link--current">
               Форма отзыва
             </a>
           </li>
@@ -66,7 +66,7 @@
       </header>
       <div class="review__form review-form">
         <form class="review-form" action="https://echo.htmlacademy.ru/" method="get">
-          <div class="review-form__container">
+          <div class="review-form__container review-form__container--is-half">
             <fieldset class="review-form__group form-initials">
               <legend class="review-form__title form-initials__title">
                 Представьтесь:
@@ -91,7 +91,7 @@
               </div>
             </fieldset>
           </div>
-          <div class="review-form__container">
+          <div class="review-form__container review-form__container--is-half">
             <fieldset class="review-form__group form-contacts">
               <legend class="review-form__title form-contacts__title">
                 Контактная информация:
@@ -111,12 +111,12 @@
             </fieldset>
           </div>
           <div class="review-form__container">
-            <fieldset class="review-form__group form-impression">
-              <legend class="review-form__title form-impression__title">
+            <fieldset class="review-form__group">
+              <legend class="review-form__title">
                 Ваше общее впечатление:
               </legend>
-              <ul class="review-form__checkradio form-impression__list ">
-                <li class="form-impression__item">
+              <ul class="review-form__checkradio">
+                <li class="review-form__item">
                   <label class="form-control">
                     <input class="form-control__input  visually-hidden" type="radio" name="impression" value="positive" checked>
                     <span class="form-control__mark"></span>
@@ -125,7 +125,7 @@
                     </span>
                   </label>
                 </li>
-                <li class="form-impression__item">
+                <li class="review-form__item">
                   <label class="form-control">
                     <input class="form-control__input visually-hidden" type="radio" name="impression" value="negative">
                     <span class="form-control__mark"></span>
@@ -134,7 +134,7 @@
                     </span>
                   </label>
                 </li>
-                <li class="form-impression__item">
+                <li class="review-form__item">
                   <label class="form-control">
                     <input class="form-control__input visually-hidden" type="radio" name="impression" value="difficult-to-answer">
                     <span class="form-control__mark"></span>
@@ -147,12 +147,12 @@
             </fieldset>
           </div>
           <div class="review-form__container">
-            <fieldset class="review-form__group visited-attractions">
-              <legend class="review-form__title visited-attractions__title">
+            <fieldset class="review-form__group">
+              <legend class="review-form__title">
                 Посещённые достопримечательности:
               </legend>
-              <ul class="review-form__checkradio visited-attractions__list">
-                <li class="visited-attractions__item">
+              <ul class="review-form__checkradio">
+                <li class="review-form__item review-form__item--attractions">
                   <label class="form-control">
                     <input class="form-control__input visually-hidden" type="checkbox" name="visited-attractions" value="devil-bridge" checked>
                     <span class="form-control__mark"></span>
@@ -161,7 +161,7 @@
                     </span>
                   </label>
                 </li>
-                <li class="visited-attractions__item">
+                <li class="review-form__item review-form__item--attractions">
                   <label class="form-control">
                     <input class="form-control__input visually-hidden" type="checkbox" name="visited-attractions" value="bell-mountain" checked>
                     <span class="form-control__mark"></span>
@@ -170,7 +170,7 @@
                     </span>
                   </label>
                 </li>
-                <li class="visited-attractions__item">
+                <li class="review-form__item review-form__item--attractions">
                   <label class="form-control">
                     <input class="form-control__input visually-hidden" type="checkbox" name="visited-attractions" value="slide-park" checked>
                     <span class="form-control__mark"></span>
@@ -179,7 +179,7 @@
                     </span>
                   </label>
                 </li>
-                <li class="visited-attractions__item">
+                <li class="review-form__item review-form__item--attractions">
                   <label class="form-control">
                     <input class="form-control__input visually-hidden" type="checkbox" name="visited-attractions" value="slide-park">
                     <span class="form-control__mark"></span>

@@ -7,12 +7,22 @@
   background-color: @color-basic;
   color: @color-basic-second;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+  }
 }
 
 .local-service__item {
-  max-width: 240px;
   margin-left: auto;
   text-align: left;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    text-align: center;
+  }
 }
 
 .local-service__title {
@@ -21,6 +31,7 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+  max-width: 240px;
 }
 
 .local-service__description {
@@ -29,4 +40,5 @@
   font-size: 14px;
   line-height: 21px;
   color: @color-basic-tertiary;
+  min-width: 240px;
 }

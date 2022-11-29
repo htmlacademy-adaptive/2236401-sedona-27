@@ -6,8 +6,22 @@
 
 .sights__item {
   border-top: 1px solid @color-input-hover;
+
+  @media (min-width: @tablet-width) {
+    width: 50%;
+  }
+
+  @media (min-width: @desctop-width) {
+    width: calc(100% / 3);
+  }
 }
 
 .sights__item:last-of-type {
   border-bottom: 1px solid @color-input-hover;
+}
+
+@media (min-width: @tablet-width) {
+  .sights .sights__item:first-of-type {
+    width: 100%;
+  }
 }
