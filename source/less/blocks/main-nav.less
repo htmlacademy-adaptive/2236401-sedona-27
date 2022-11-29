@@ -1,0 +1,29 @@
+.main-nav__wrapper {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  display: none;
+}
+
+.main-nav__toogle {
+  background: url("../../img/icon-menu.svg") no-repeat center center;
+  width: 23px;
+  height: 22px;
+  border: none;
+  padding: 25px;
+}
+
+.main-nav__toogle:hover + .main-nav__wrapper {
+  display: block;
+}
+
+.main-nav:hover .main-nav__wrapper {
+  display: block;
+}
+
+.main-nav__toogle:active + .main-nav__wrapper {
+  display: block;
+}
