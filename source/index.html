@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
-  <div class="page__container">
+    <div class="page__container">
 
       <header class="page__header main-header">
         <a  class="main-header__logo logo-sedona" href="#">
@@ -32,8 +32,6 @@
                   Фото и видео
                 </a>
               </li>
-            </ul>
-            <ul class="main-nav__list site-list site-list--user-interface">
               <li class="site-list__item">
                 <a class="site-list__link button" href="form.html">
                   Форма отзыва
@@ -74,17 +72,20 @@
                     Настоящий городок
                   </h3>
                   <span class="card-advantages__index-number">
-                    -№1-
+                    &mdash; №1 &mdash;
                   </span>
                   <p class="card-advantages__description">
-                    Седона не аттракцион для туристов,<br> там течёт своя жизнь
+                    Седона не аттракцион для туристов, там течёт своя жизнь
                   </p>
                 </div>
-                <img class="card-advantages__image reasons-image" src="img/city-sedona-800.jpg" width="320" height="260" alt="Потрясающие пейзажи Седоны.">
-
+                <picture class="card-advantages__picture">
+                  <source media="(max-width: 1199px)" srcset="img/sedona-city.jpg">
+                  <source media="(min-width: 1200px)" srcset="img/sedona-city-1200.jpg">
+                  <img class="card-advantages__image reasons-image" src="img/sedona-city-1200.jpg" width="320" height="260" alt="Потрясающие пейзажи Седоны.">
+                </picture>
               </div>
               <ul class="card-advantages__local-service local-service">
-                <li class="local-service__item">
+                <li class="local-service__item local-service__item--housing">
                   <h3 class="local-service__title">
                     Жильё
                   </h3>
@@ -92,7 +93,7 @@
                     Рекомендуем пожить в настоящем мотеле, все как в кино!
                   </p>
                 </li>
-                <li class="local-service__item">
+                <li class="local-service__item local-service__item--food">
                   <h3 class="local-service__title">
                     Еда
                   </h3>
@@ -100,7 +101,7 @@
                     Всегда заказывайте фирменный бургер, Вы не разочаруетесь!
                   </p>
                 </li>
-                <li class="local-service__item">
+                <li class="local-service__item local-service__item--souvenir">
                   <h3 class="local-service__title">
                     Сувениры
                   </h3>
@@ -117,13 +118,17 @@
                     Там есть мост дьявола
                   </h3>
                   <span class="card-advantages__index-number">
-                    -№2-
+                    &mdash; №2 &mdash;
                   </span>
                   <p class="card-advantages__description">
-                    Да, по нему можно пройти! Если вы<br> осмелитесь, конечно
+                    Да, по нему можно пройти! Если вы осмелитесь, конечно
                   </p>
                 </div>
-                <img class="card-advantages__image reasons-image" src="img/devil-bridge-800.jpg" width="320" height="260" alt="Завораживающий вид моста Дьявола с высоты птичьего полёта.">
+                <picture class="card-advantages__picture">
+                  <source media="(max-width: 1199px)" srcset="img/devil-bridge.jpg">
+                  <source media="(min-width: 1200px)" srcset="img/devil-bridge-1200.jpg">
+                  <img class="card-advantages__image reasons-image" src="img/sedona-city-1200.jp" width="320" height="260" alt="Завораживающий вид моста Дьявола с высоты птичьего полёта.">
+                </picture>
               </div>
             </li>
             <li class="advantages__item card-advantages card-advantages--simple">
@@ -132,10 +137,10 @@
                   Небольшая площадь
                 </h3>
                 <span class="card-advantages__index-number">
-                  -№3-
+                  &mdash; №3 &mdash;
                 </span>
                 <p class="card-advantages__description">
-                  Все интересные места находятся<br> очень близко
+                  Все интересные места находятся очень близко
                 </p>
               </div>
             </li>
@@ -145,10 +150,10 @@
                   Красивая дорога
                 </h3>
                 <span class="card-advantages__index-number">
-                  -№4-
+                  &mdash; №4 &mdash;
                 </span>
                 <p class="card-advantages__description">
-                  Ехать в Седону из Лас-Вегаса<br> совсем не скучно!
+                  Ехать в Седону из Лас-Вегаса совсем не скучно!
                 </p>
               </div>
             </li>
@@ -158,10 +163,10 @@
                   Мало туристов
                 </h3>
                 <span class="card-advantages__index-number">
-                  -№5-
+                  &mdash; №5 &mdash;
                 </span>
                 <p class="card-advantages__description">
-                  Большинство едет в гранд каньон <br>и толпится там
+                  Большинство едет в гранд каньон и толпится там
                 </p>
               </div>
             </li>
@@ -182,8 +187,11 @@
           </a>
         </section>
         <section class="main-container__city-map city-map">
-          <h2 class="visually-hidden">Карта города Седона.</h2>
-          <img class="city-map__image" src="img/map.jpg" width="320" height="350" alt="Карта городка Седона.">
+          <h2 class="visually-hidden">
+            Карта города Седона, штат Аризона.
+          </h2>
+          <iframe class="city-map__image" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3380999.518205091!2d-114.17316159878374!3d34.15254977821959!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b08ebcb4c186b%3A0x423927b17fc1cd71!2z0JDRgNC40LfQvtC90LAsINCh0KjQkA!5e0!3m2!1sru!2sby!4v1670144105658!5m2!1sru!2sby" width="320" height="350" allowfullscreen title="Седона – пустынный город в американском штате Аризона вблизи Флагстаффа, окруженный скальными останцами красного цвета, каньоном с крутыми стенами и сосновыми лесами.">
+          </iframe>
         </section>
       </main>
       <footer class="page__footer main-footer">
@@ -224,6 +232,6 @@
           </div>
         </div>
       </footer>
-  </div>
+    </div>
   </body>
 </html>

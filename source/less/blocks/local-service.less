@@ -1,8 +1,8 @@
 .local-service {
   display: flex;
   flex-direction: column;
-  gap: 25px;
-  padding: 23px 18px 46px;
+  gap: 24px;
+  padding: 23px 18px 45px 65px;
   list-style-type: none;
   background-color: @color-basic;
   color: @color-basic-second;
@@ -14,28 +14,73 @@
     gap: 0;
     width: 100%;
     min-height: 300px;
-    padding: 150px 33px 64px;
+    padding: 150px 0 60px;
     box-sizing: border-box;
+  }
+
+  @media (min-width: @desctop-width) {
+    padding: 160px 0 68px;
   }
 }
 
 .local-service__item {
-  margin-left: auto;
   text-align: left;
+  padding-top: 9px;
+  position: relative;
 
   @media (min-width: @tablet-width) {
-    margin: 0;
+    margin: 0 auto;
     text-align: center;
+    padding-top: 8px;
   }
 }
 
+.local-service__item--housing::before {
+  display: block;
+  content: "";
+  background: url("../img/icon-housing.svg") no-repeat left top;
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  transform: translate(-118%, -20%);
+}
+
+.local-service__item--food::before {
+  display: block;
+  content: "";
+  background: url("../img/icon-food.svg") no-repeat left top;
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  transform: translate(-117%, -18%);
+}
+
+.local-service__item--souvenir::before {
+  display: block;
+  content: "";
+  background: url("../img/icon-souvenir.svg") no-repeat left top;
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  transform: translate(-108%, -20%);
+}
+
 .local-service__title {
-  margin: 0 auto 16px;
+  margin: 0 0 16px;
   padding: 0;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   max-width: 240px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+    margin: 0 0 23px;
+  }
+
+  @media (min-width: @desctop-width) {
+    margin: 0 8px 23px;
+  }
 }
 
 .local-service__description {
@@ -44,5 +89,35 @@
   font-size: 14px;
   line-height: 21px;
   color: @color-basic-tertiary;
-  min-width: 240px;
+  max-width: 240px;
+
+  @media (min-width: @tablet-width) {
+    max-width: 170px;
+  }
+
+  @media (min-width: @desctop-width) {
+    max-width: 260px;
+  }
+}
+
+.local-service__item--housing {
+  @media (min-width: @desctop-width) {
+    padding-top: 11px;
+  }
+}
+
+.local-service__item--souvenir {
+  @media (min-width: @tablet-width) {
+    padding-top: 4px;
+  }
+
+  @media (min-width: @desctop-width) {
+    padding-top: 11px;
+  }
+}
+
+@media (min-width: @tablet-width) and (max-width: 1199px) {
+  .local-service__item--food .local-service__description {
+    max-width: 155px;
+  }
 }

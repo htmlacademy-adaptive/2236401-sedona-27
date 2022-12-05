@@ -1,12 +1,30 @@
 .reasons__header {
   text-align: center;
   padding: 0;
-  margin: 0 auto;
-  max-width: 284px;
+  margin: 0 auto 32px;
   text-transform: uppercase;
+  position: relative;
 
   @media (min-width: @tablet-width) {
-    max-width: 520px;
+    margin: 0 auto 55px;
+  }
+
+  @media (min-width: @desctop-width) {
+    margin: 0 auto 45px;
+  }
+}
+
+.reasons__header::after {
+  display: block;
+  position: absolute;
+  content: "";
+  background: url("../img/divider-2.svg") no-repeat center bottom;
+  height: 37px;
+  width: 100%;
+  bottom: -52px;
+
+  @media (min-width: @tablet-width) {
+    display: none;
   }
 }
 
@@ -15,14 +33,22 @@
   font-size: 18px;
   color: @color-basic-second;
   margin: 0 auto 35px;
+  max-width: 265px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+    margin: 0 auto 27px;
+    max-width: 500px;
+  }
 }
 
 .reasons__intro {
   font-size: 14px;
   line-height: 21px;
-  margin: 0 auto 32px;
-}
+  margin: 0 auto;
+  max-width: 284px;
 
-.reasons__list {
-  margin-bottom: 35px;
+  @media (min-width: @tablet-width) {
+    max-width: 500px;
+  }
 }

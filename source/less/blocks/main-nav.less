@@ -9,9 +9,7 @@
 
   @media (min-width: @tablet-width) {
     position: static;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 150px;
+    display: block;
   }
 }
 
@@ -43,7 +41,7 @@
 
 @media (min-width: @tablet-width) {
   .main-nav__list {
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
   }
 }

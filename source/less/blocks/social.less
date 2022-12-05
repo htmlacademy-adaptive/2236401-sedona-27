@@ -1,12 +1,45 @@
 .social {
-  margin: 0;
   padding: 0;
   list-style-type: none;
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .social__item {
   width: 48px;
   height: 48px;
-  display: inline-block;
+  margin-bottom: 3px;
+}
+
+.social__item:not(:last-child) {
+  margin-right: 6px;
+}
+
+.social__link {
+  display: block;
+  padding: 12px;
+}
+
+.social__link--vkontakte::before {
+  display: block;
+  content: "";
+  width: 24px;
+  height: 24px;
+  background: url("../img/icon-vk.svg") no-repeat center center;
+}
+
+.social__link--telegram::before {
+  display: block;
+  content: "";
+  width: 24px;
+  height: 24px;
+  background: url("../img/icon-telegram.svg") no-repeat center center;
+}
+
+.social__link--youtube::before {
+  display: block;
+  content: "";
+  width: 24px;
+  height: 24px;
+  background: url("../img/icon-youtube.svg") no-repeat center center;
 }
