@@ -1,6 +1,5 @@
 .main-header {
-  display: flex;
-  padding-left: 50px;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     display: block;
@@ -9,13 +8,8 @@
 }
 
 .main-header__logo {
-  margin: 0 auto;
-  margin-bottom: -40px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 1;
-
-  @media (min-width: @tablet-width) {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-  }
 }
