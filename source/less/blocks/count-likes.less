@@ -1,8 +1,15 @@
 .count-likes__icon {
-  background: url("../img/icons/like-icon.svg") no-repeat center center;
-  width: 23px;
-  height: 21px;
+  background-color: transparent;
   border: none;
+  fill: rgba(@color-basic-second, 0.3);
+
+  @media (min-width: @desctop-width) {
+    fill: @color-basic;
+  }
+}
+
+.count-likes__added {
+  fill: darken(#ff6347, 10%);
 }
 
 .count-likes__sum {
