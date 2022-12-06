@@ -68,12 +68,13 @@
           <ul class="gallery__list sights">
             <li class="sights__item card">
               <figure class="card__view">
-                <picture class="card__image image">
-                  <source media="(max-width: 767px)" srcset="img/catalog/non-native-spaces-320.jpg">
-                  <source media="(max-width: 1199px)" srcset="img/catalog/non-native-spaces-768.jpg">
-                  <source media="(min-width: 1200px)" srcset="img/catalog/non-native-spaces-1200.jpg">
-                  <img class="image__unit" src="img/catalog/non-native-spaces-1200.jpg" width="280" height="280" alt="Удивительные просторы Седоны на рассвете.">
-                </picture>
+                <div class="card__image image">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/catalog/non-native-spaces-desctop.jpg, img/catalog/non-native-spaces-desctop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/catalog/non-native-spaces-tablet.jpg, img/catalog/non-native-spaces-tablet@2x.jpg 2x">
+                    <img class="image__unit" src="img/catalog/non-native-spaces-mobile.jpg" srcset="img/catalog/non-native-spaces-mobile@2x.jpg 2x" width="280" height="280" alt="Удивительные просторы Седоны на рассвете.">
+                  </picture>
+                </div>
                 <figcaption class="card__caption">
                   <div class="card__description">
                     <b class="card__title">
@@ -95,12 +96,13 @@
             </li>
             <li class="sights__item card">
               <figure class="card__view">
-                <picture class="card__image image">
-                  <source media="(max-width: 767px)" srcset="img/catalog/local-vegetation-320.jpg">
-                  <source media="(max-width: 1199px)" srcset="img/catalog/local-vegetation-768.jpg">
-                  <source media="(min-width: 1200px)" srcset="img/catalog/local-vegetation-1200.jpg">
-                  <img class="image__unit" src="img/catalog/local-vegetation-1200.jpg" width="280" height="280" alt="Редкие виды местных растений.">
-                </picture>
+                <div class="card__image image">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/catalog/local-vegetation-desctop.jpg, img/catalog/local-vegetation-desctop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/catalog/local-vegetation-tablet.jpg, img/catalog/local-vegetation-tablet@2x.jpg 2x">
+                    <img class="image__unit" src="img/catalog/local-vegetation-mobile.jpg" srcset="img/catalog/local-vegetation-mobile@2x.jpg 2x" width="280" height="280" alt="Редкие виды местных растений.">
+                  </picture>
+                </div>
                 <figcaption class="card__caption">
                   <div class="card__description">
                     <b class="card__title">
@@ -122,12 +124,13 @@
             </li>
             <li class="sights__item card">
               <figure class="card__view">
-                <picture class="card__image image">
-                  <source media="(max-width: 767px)" srcset="img/catalog/road-to-north-320.jpg">
-                  <source media="(max-width: 1199px)" srcset="img/catalog/road-to-north-768.jpg">
-                  <source media="(min-width: 1200px)" srcset="img/catalog/road-to-north-1200.jpg">
-                  <img class="image__unit" src="img/catalog/road-to-north-1200.jpg" width="280" height="280" alt="Обзор дороги в холмистой местности.">
-                </picture>
+                <div class="card__image image">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/catalog/road-to-north-desctop.jpg, img/catalog/road-to-north-desctop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/catalog/road-to-north-tablet.jpg, img/catalog/road-to-north-tablet@2x.jpg 2x">
+                    <img class="image__unit" src="img/catalog/road-to-north-mobile.jpg" srcset="img/catalog/road-to-north-mobile@2x.jpg 2x" width="280" height="280" alt="Обзор дороги в холмистой местности.">
+                  </picture>
+                </div>
                 <figcaption class="card__caption">
                   <div class="card__description">
                     <b class="card__title">
@@ -149,12 +152,13 @@
             </li>
             <li class="sights__item card">
               <figure class="card__view">
-                <picture class="card__image image">
-                  <source media="(max-width: 767px)" srcset="img/catalog/d-bridge-320.jpg">
-                  <source media="(max-width: 1199px)" srcset="img/catalog/d-bridge-768.jpg">
-                  <source media="(min-width: 1200px)" srcset="img/catalog/d-bridge-1200.jpg">
-                  <img class="image__unit" src="img/catalog/d-bridge-1200.jpg" width="280" height="280" alt="Скалы, известные как мост Дьявола с высоты тичьего полёта.">
-                </picture>
+                <div class="card__image image">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="iimg/catalog/devil-bridge-desctop.jpg, img/catalog/devil-bridge-desctop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/catalog/devil-bridge-tablet.jpg, img/catalog/devil-bridge-tablet@2x.jpg 2x">
+                    <img class="image__unit" src="img/catalog/devil-bridge-mobile.jpg" srcset="img/catalog/devil-bridge-mobile@2x.jpg 2x" width="280" height="280" alt="Скалы, известные как мост Дьявола с высоты тичьего полёта.">
+                  </picture>
+                </div>
                 <figcaption class="card__caption">
                   <div class="card__description">
                     <b class="card__title">
@@ -189,7 +193,11 @@
             </p>
           </div>
           <div class="video-suggestion__image image-suggestion">
-            <img class="image-suggestion__unit" src="img/video-suggestion.jpg" width="280" height="177" alt="Видеопрезентация города Седона.">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/catalog/video-desctop.jpg 1x, img/catalog/video-desctop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/catalog/video-tablet.jpg 1x, img/catalog/video-tablet@2x.jpg 2x">
+              <img class="image-suggestion__unit" src="img/catalog/video-mobile.jpg" srcset="img/catalog/video-mobile@2x.jpg 2x" width="280" height="177" alt="Видеопрезентация города Седона.">
+            </picture>
           </div>
         </section>
       </main>
