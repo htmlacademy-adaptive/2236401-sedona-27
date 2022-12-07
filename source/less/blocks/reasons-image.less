@@ -1,4 +1,11 @@
-.reasons-image__unit {
+.reasons-image {
   display: block;
   width: 100%;
+  object-fit: cover;
+}
+
+@media (min-width: @tablet-width) {
+  .reasons-image {
+    height: 100%;
+  }
 }

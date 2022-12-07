@@ -1,216 +1,249 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HTML Academy: Седона</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
 
-<body class="page__body">
-  <header class="page__header main-header">
-    <a class="main-header__logo logo-sedona" href="#">
-      <img class="logo-sedona__image" src="img/logo-sedona.svg" width="185" height="96" alt="Городок Седона.">
-    </a>
-    <nav class="main-header__nav main-nav">
-      <button class="main-nav__toogle button" type="button">
-        <span class="visually-hidden">
-          Открыть меню
-        </span>
-      </button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a class="site-list__link button" href="index.html">
-              Главная
-            </a>
-          </li>
-          <li class="site-list__item site-list__item--current">
-            <a class="site-list__link button">
-              Фото и видео
-            </a>
-          </li>
-        </ul>
-        <ul class="main-nav__list site-list site-list--user-interface">
-          <li class="site-list__item">
-            <a class="site-list__link button" href="form.html">
-              Форма отзыва
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link button" href="https://www.htmlacademy.ru/">
-              HTML Academy
-            </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-  <main class="page__main main-container">
-    <section class="main-container__intro intro intro--inner">
-      <h1 class="visually-hidden">
-        Добро пожаловать в Седону!
-      </h1>
-      <div class="intro__background intro__background--inner">
-        <img class="intro__text-image intro__text-image--inner" width="229" height="39" src="img/intro-inner.svg" alt="Добро пожаловать в великолепную Седону.">
-      </div>
-    </section>
-    <section class="main-container__gallery gallery">
-      <header class="gallery__header">
-        <h2 class="gallery__title">
-          Фото и видео
-        </h2>
-        <p class="gallery__intro">
-          Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.
-        </p>
-      </header>
-      <ul class="gallery__list sights">
-        <li class="sights__item card">
-          <figure class="card__view">
-            <p class="card__image image">
-              <img class="image__unit" src="img/non-native-spaces.jpg" width="280" height="280" alt="Удивительные просторы Седоны на рассвете.">
-            </p>
-            <figcaption class="card__caption">
-              <b class="card__title">
-                Неродные просторы
-              </b>
-              <p class="card__author">
-                Автор фото: Борис
-              </p>
-              <div class="card__actions count-likes">
-                <button class="count-likes__icon" type="button">
-                </button>
-                <span class="count-likes__sum">
-                  1350
-                </span>
-              </div>
-            </figcaption>
-          </figure>
-        </li>
-        <li class="sights__item card">
-          <figure class="card__view">
-            <p class="card__image image">
-              <img class="image__unit" src="img/local-vegetation.jpg" width="280" height="280" alt="Редкие виды местных растений.">
-            </p>
-            <figcaption class="card__caption">
-              <b class="card__title">
-                Местная растительность
-              </b>
-              <p class="card__author">
-                Автор фото: Сергей
-              </p>
-              <div class="card__actions count-likes">
-                <button class="count-likes__icon" type="button">
-                </button>
-                <span class="count-likes__sum">
-                  143
-                </span>
-              </div>
-            </figcaption>
-          </figure>
-        </li>
-        <li class="sights__item card">
-          <figure class="card__view">
-            <p class="card__image image">
-              <img class="image__unit" src="img/road-to-north.jpg" width="280" height="280" alt="Обзор дороги в холмистой местности.">
-            </p>
-            <figcaption class="card__caption">
-              <b class="card__title">
-                Дорога на север
-              </b>
-              <p class="card__author">
-                Автор фото: Пётр
-              </p>
-              <div class="card__actions count-likes">
-                <button class="count-likes__icon" type="button">
-                </button>
-                <span class="count-likes__sum">
-                  96
-                </span>
-              </div>
-            </figcaption>
-          </figure>
-        </li>
-        <li class="sights__item card">
-          <figure class="card__view">
-            <p class="card__image image">
-              <img class="image__unit" src="img/devil-bridge.jpg" width="280" height="280" alt="Скалы, известные как мост Дьявола с высоты тичьего полёта.">
-            </p>
-            <figcaption class="card__caption">
-              <b class="card__title">
-                Мост Дьявола
-              </b>
-              <p class="card__author">
-                Автор фото: Антон
-              </p>
-              <div class="card__actions count-likes">
-                <button class="count-likes__icon" type="button">
-                </button>
-                <span class="count-likes__sum">
-                  254
-                </span>
-              </div>
-            </figcaption>
-          </figure>
-        </li>
-      </ul>
-    </section>
-    <section class="main-container__video-suggestion video-suggestion">
-      <div class="video-suggestion__text">
-        <h2 class="visually-hidden">
-          Видеопрезентация города Седона.
-        </h2>
-        <b class="video-suggestion__title">
-          Всё ещё сомневаетесь?
-        </b>
-        <p class="video-suggestion__description">
-          Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
-        </p>
-      </div>
-      <div class="video-suggestion__image image-suggestion">
-        <img class="image-suggestion__unit" src="img/video-suggestion.jpg" width="280" height="177" alt="Видеопрезентация города Седона.">
-      </div>
-    </section>
-  </main>
-  <footer class="page__footer main-footer">
-    <div class="main-footer__wrapper">
-      <span class="main-footer__hashtag">
-        #visitsedona
-      </span>
-      <ul class="main-footer__social social">
-        <li class="social__item button">
-          <span class="visually-hidden">
-            Мы в Вконтакте
-          </span>
-          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
-          </a>
-        </li>
-        <li class="social__item button">
-          <span class="visually-hidden">
-            Мы в Телеграме
-          </span>
-          <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
-          </a>
-        </li>
-        <li class="social__item button">
-          <span class="visually-hidden">
-            Мы в Ютубе
-          </span>
-          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
-          </a>
-        </li>
-      </ul>
-      <div class="main-footer__copyright copyright">
-        <b class="copyright__text">
-          Разработано:
-        </b>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          Логотип HTML-академии
+  <body class="page__body">
+    <div class="page__container">
+      <header class="page__header main-header">
+        <a class="main-header__logo logo-sedona" href="#">
+          <img class="logo-sedona__image" src="img/logo-sedona.svg" width="185" height="96" alt="Городок Седона.">
         </a>
-      </div>
+        <nav class="main-header__nav main-nav main-nav--closed main-nav--nojs">
+          <button class="main-nav__toggle button" type="button">
+            <span class="visually-hidden">
+              Открыть меню
+            </span>
+          </button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item">
+                <a class="site-list__link button" href="index.html">
+                  Главная
+                </a>
+              </li>
+              <li class="site-list__item site-list__link--current">
+                <a class="site-list__link button">
+                  Фото и видео
+                </a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link button" href="form.html">
+                  Форма отзыва
+                </a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link button" href="https://www.htmlacademy.ru/">
+                  HTML Academy
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <main class="page__main main-container">
+        <section class="main-container__intro intro intro--inner">
+          <h1 class="visually-hidden">
+            Добро пожаловать в Седону!
+          </h1>
+          <div class="intro__background intro__background--inner">
+            <img class="intro__text-image intro__text-image--inner" width="229" height="39" src="img/intro-inner.svg" alt="Добро пожаловать в великолепную Седону.">
+          </div>
+        </section>
+        <section class="main-container__gallery gallery">
+          <header class="gallery__header">
+            <h2 class="gallery__title">
+              Фото и видео
+            </h2>
+            <p class="gallery__intro">
+              Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.
+            </p>
+          </header>
+          <ul class="gallery__list sights">
+            <li class="sights__item card">
+              <figure class="card__view">
+                <div class="card__image image">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/catalog/non-native-spaces-desctop.jpg, img/catalog/non-native-spaces-desctop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/catalog/non-native-spaces-tablet.jpg, img/catalog/non-native-spaces-tablet@2x.jpg 2x">
+                    <img class="image__unit" src="img/catalog/non-native-spaces-mobile.jpg" srcset="img/catalog/non-native-spaces-mobile@2x.jpg 2x" width="280" height="280" alt="Удивительные просторы Седоны на рассвете.">
+                  </picture>
+                </div>
+                <figcaption class="card__caption">
+                  <div class="card__description">
+                    <b class="card__title">
+                      Неродные просторы
+                    </b>
+                    <p class="card__author">
+                      Автор фото: Борис
+                    </p>
+                  </div>
+                  <div class="card__actions count-likes">
+                    <button class="count-likes__icon" type="button">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="23" height="21" viewBox="0 0 23 21"><path d="m12.964 3.78-.628 3.045-.627 2.625h9.096v2.205L17.773 18.9h-9.41V8.4l4.6-4.62ZM2.09 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.418.315-.627.84-.627 1.47v10.5c0 1.155.94 2.1 2.09 2.1h9.41c.836 0 1.568-.525 1.881-1.26l3.137-7.455c.104-.21.104-.525.104-.735v-2.1H23c0-1.155-.94-2.1-2.09-2.1h-6.587l1.045-4.83v-.315c0-.42-.209-.84-.418-1.155L13.8 0ZM4.182 8.4H0V21h4.182V8.4Z" /></svg>
+                    </button>
+                    <span class="count-likes__sum">
+                      1350
+                    </span>
+                  </div>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="sights__item card">
+              <figure class="card__view">
+                <div class="card__image image">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/catalog/local-vegetation-desctop.jpg, img/catalog/local-vegetation-desctop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/catalog/local-vegetation-tablet.jpg, img/catalog/local-vegetation-tablet@2x.jpg 2x">
+                    <img class="image__unit" src="img/catalog/local-vegetation-mobile.jpg" srcset="img/catalog/local-vegetation-mobile@2x.jpg 2x" width="280" height="280" alt="Редкие виды местных растений.">
+                  </picture>
+                </div>
+                <figcaption class="card__caption">
+                  <div class="card__description">
+                    <b class="card__title">
+                      Местная растительность
+                    </b>
+                    <p class="card__author">
+                      Автор фото: Сергей
+                    </p>
+                  </div>
+                  <div class="card__actions count-likes">
+                    <button class="count-likes__icon" type="button">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="23" height="21"  viewBox="0 0 23 21"><path d="m12.964 3.78-.628 3.045-.627 2.625h9.096v2.205L17.773 18.9h-9.41V8.4l4.6-4.62ZM2.09 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.418.315-.627.84-.627 1.47v10.5c0 1.155.94 2.1 2.09 2.1h9.41c.836 0 1.568-.525 1.881-1.26l3.137-7.455c.104-.21.104-.525.104-.735v-2.1H23c0-1.155-.94-2.1-2.09-2.1h-6.587l1.045-4.83v-.315c0-.42-.209-.84-.418-1.155L13.8 0ZM4.182 8.4H0V21h4.182V8.4Z"/></svg>
+                    </button>
+                    <span class="count-likes__sum">
+                      143
+                    </span>
+                  </div>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="sights__item card">
+              <figure class="card__view">
+                <div class="card__image image">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/catalog/road-to-north-desctop.jpg, img/catalog/road-to-north-desctop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/catalog/road-to-north-tablet.jpg, img/catalog/road-to-north-tablet@2x.jpg 2x">
+                    <img class="image__unit" src="img/catalog/road-to-north-mobile.jpg" srcset="img/catalog/road-to-north-mobile@2x.jpg 2x" width="280" height="280" alt="Обзор дороги в холмистой местности.">
+                  </picture>
+                </div>
+                <figcaption class="card__caption">
+                  <div class="card__description">
+                    <b class="card__title">
+                      Дорога на север
+                    </b>
+                    <p class="card__author">
+                      Автор фото: Пётр
+                    </p>
+                  </div>
+                  <div class="card__actions count-likes">
+                    <button class="count-likes__icon" type="button">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="23" height="21" viewBox="0 0 23 21"><path d="m12.964 3.78-.628 3.045-.627 2.625h9.096v2.205L17.773 18.9h-9.41V8.4l4.6-4.62ZM2.09 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.418.315-.627.84-.627 1.47v10.5c0 1.155.94 2.1 2.09 2.1h9.41c.836 0 1.568-.525 1.881-1.26l3.137-7.455c.104-.21.104-.525.104-.735v-2.1H23c0-1.155-.94-2.1-2.09-2.1h-6.587l1.045-4.83v-.315c0-.42-.209-.84-.418-1.155L13.8 0ZM4.182 8.4H0V21h4.182V8.4Z" /></svg>
+                    </button>
+                    <span class="count-likes__sum">
+                      96
+                    </span>
+                  </div>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="sights__item card">
+              <figure class="card__view">
+                <div class="card__image image">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="iimg/catalog/devil-bridge-desctop.jpg, img/catalog/devil-bridge-desctop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/catalog/devil-bridge-tablet.jpg, img/catalog/devil-bridge-tablet@2x.jpg 2x">
+                    <img class="image__unit" src="img/catalog/devil-bridge-mobile.jpg" srcset="img/catalog/devil-bridge-mobile@2x.jpg 2x" width="280" height="280" alt="Скалы, известные как мост Дьявола с высоты тичьего полёта.">
+                  </picture>
+                </div>
+                <figcaption class="card__caption">
+                  <div class="card__description">
+                    <b class="card__title">
+                      Мост Дьявола
+                    </b>
+                    <p class="card__author">
+                      Автор фото: Антон
+                    </p>
+                  </div>
+                  <div class="card__actions count-likes">
+                    <button class="count-likes__icon" type="button">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="23" height="21"  viewBox="0 0 23 21"><path d="m12.964 3.78-.628 3.045-.627 2.625h9.096v2.205L17.773 18.9h-9.41V8.4l4.6-4.62ZM2.09 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.418.315-.627.84-.627 1.47v10.5c0 1.155.94 2.1 2.09 2.1h9.41c.836 0 1.568-.525 1.881-1.26l3.137-7.455c.104-.21.104-.525.104-.735v-2.1H23c0-1.155-.94-2.1-2.09-2.1h-6.587l1.045-4.83v-.315c0-.42-.209-.84-.418-1.155L13.8 0ZM4.182 8.4H0V21h4.182V8.4Z" /></svg>
+                    </button>
+                    <span class="count-likes__sum">
+                      254
+                    </span>
+                  </div>
+                </figcaption>
+              </figure>
+            </li>
+          </ul>
+        </section>
+        <section class="main-container__video-suggestion video-suggestion">
+          <div class="video-suggestion__text">
+            <h2 class="visually-hidden">
+              Видеопрезентация города Седона.
+            </h2>
+            <b class="video-suggestion__title">
+              Всё ещё сомневаетесь?
+            </b>
+            <p class="video-suggestion__description">
+              Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
+            </p>
+          </div>
+          <div class="video-suggestion__image image-suggestion">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/catalog/video-desctop.jpg 1x, img/catalog/video-desctop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/catalog/video-tablet.jpg 1x, img/catalog/video-tablet@2x.jpg 2x">
+              <img class="image-suggestion__unit" src="img/catalog/video-mobile.jpg" srcset="img/catalog/video-mobile@2x.jpg 2x" width="280" height="177" alt="Видеопрезентация города Седона.">
+            </picture>
+          </div>
+        </section>
+      </main>
+      <footer class="page__footer main-footer">
+        <div class="main-footer__wrapper">
+          <span class="main-footer__hashtag">
+            #visitsedona
+          </span>
+          <ul class="main-footer__social social">
+            <li class="social__item button">
+              <span class="visually-hidden">
+                Мы в Вконтакте
+              </span>
+              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+              </a>
+            </li>
+            <li class="social__item button">
+              <span class="visually-hidden">
+                Мы в Телеграме
+              </span>
+              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+              </a>
+            </li>
+            <li class="social__item button">
+              <span class="visually-hidden">
+                Мы в Ютубе
+              </span>
+              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+              </a>
+            </li>
+          </ul>
+          <div class="main-footer__copyright copyright">
+            <b class="copyright__text">
+              Разработано:
+            </b>
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+              Логотип HTML-академии
+            </a>
+          </div>
+        </div>
+      </footer>
     </div>
-  </footer>
-</body>
+    <script src="js/app.js"></script>
+  </body>
 </html>

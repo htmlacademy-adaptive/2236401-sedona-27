@@ -1,4 +1,6 @@
 .main-footer__wrapper {
+  display: flex;
+  flex-direction: column;
   padding: 29px 20px 23px;
   margin: 0 auto;
   color: @color-basic-second;
@@ -12,4 +14,34 @@
   line-height: 26px;
   text-transform: uppercase;
   margin-bottom: 33px;
+}
+
+.main-footer__social {
+  margin: 0 auto 40px;
+}
+
+
+@media (min-width: @tablet-width) {
+  .main-footer__wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    padding: 25px 25px 36px;
+  }
+
+  .main-footer__hashtag {
+    margin-bottom: 0;
+    padding: 13px 5px 0;
+  }
+
+  .main-footer__social {
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @desctop-width) {
+  .main-footer__wrapper {
+    margin-bottom: 58px;
+    padding: 25px 4px 36px;
+  }
 }

@@ -1,4 +1,25 @@
+.count-likes__icon {
+  background-color: transparent;
+  border: none;
+  fill: rgba(@color-basic-second, 0.3);
+}
+
+.count-likes__added {
+  fill: darken(#ff6347, 10%);
+}
+
 .count-likes__sum {
+  padding-left: 10px;
   font-weight: 700;
   color: @color-basic-second;
+}
+
+@media (min-width: @desctop-width) {
+  .count-likes__icon {
+    fill: @color-basic;
+  }
+
+  .count-likes__sum {
+    color: @color-basic;
+  }
 }

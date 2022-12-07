@@ -3,6 +3,7 @@
   margin: 0 auto;
   text-align: center;
   text-transform: uppercase;
+  margin-bottom: 25px;
 }
 
 .review__title {
@@ -18,11 +19,47 @@
 .review__intro {
   font-size: 14px;
   line-height: 21px;
+  margin: 0;
+  padding: 0;
 }
 
 .review__button {
   font-weight: 700;
   padding: 16px;
-  width: 284px;
-  margin: auto;
+  width: 280px;
+  margin: 0 auto;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+@media (min-width: @tablet-width) {
+  .review__header {
+    min-width: 440px;
+    margin-bottom: 78px;
+  }
+
+  .review__title {
+    font-size: 30px;
+    margin-bottom: 32px;
+  }
+
+  .review__button {
+    margin: 0 auto 0 20px;
+    width: 324px;
+  }
+
+  .review__form {
+    margin-bottom: 75px;
+  }
+}
+
+@media (min-width: @desctop-width) {
+  .review__header {
+    margin-bottom: 45px;
+  }
+
+  .review__button {
+    margin: 0 auto 0 96px;
+    width: 384px;
+  }
 }

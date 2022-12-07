@@ -2,12 +2,32 @@
   display: block;
 }
 
+.comment__text {
+  margin: 0;
+  padding: 0;
+}
+
 .comment__textarea {
-  padding: 16px;
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 26px;
+  padding: 16px 16px 4px;
   width: 100%;
   border: none;
   box-sizing: border-box;
   background-color: @color-background-second;
   color: rgba(0, 0, 0, 0.3);
   font-weight: 700;
+}
+
+@media (min-width: @tablet-width) {
+  .comment__textarea {
+    padding: 16px 16px 13px;
+  }
+}
+
+@media (min-width: @desctop-width) {
+  .comment__text {
+    padding-top: 6px;
+  }
 }
