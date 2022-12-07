@@ -33,24 +33,28 @@
   display: block;
   margin: auto;
   padding: 90px 0 85px;
-
-  @media (min-width: @tablet-width) {
-    width: 500px;
-    height: 350px;
-    padding: 77px 0 90px;
-  }
 }
 
 .intro__text-image--inner {
   padding: 51px 0 68px;
+}
 
-  @media (min-width: @tablet-width) {
+@media (min-width: @tablet-width) {
+  .intro__text-image {
+    width: 500px;
+    height: 350px;
+    padding: 77px 0 90px;
+  }
+
+  .intro__text-image--inner {
     padding: 35px 0 64px;
     width: 455px;
     height: 190px;
   }
+}
 
-  @media (min-width: @desctop-width) {
+@media (min-width: @desctop-width) {
+  .intro__text-image--inner {
     padding: 46px 0 64px;
     width: 460px;
   }

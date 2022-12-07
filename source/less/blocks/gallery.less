@@ -3,11 +3,6 @@
   text-align: center;
   margin: 0 auto 51px;
   text-transform: uppercase;
-
-  @media (min-width: @tablet-width) {
-    min-width: 440px;
-    margin: 0 auto 80px;
-  }
 }
 
 .gallery__title {
@@ -18,12 +13,6 @@
   margin: 0;
   padding: 0;
   margin-bottom: 24px;
-
-  @media (min-width: @tablet-width) {
-    font-size: 30px;
-    padding-top: 21px;
-    margin-bottom: 33px;
-  }
 }
 
 .gallery__intro {
@@ -34,6 +23,17 @@
 }
 
 @media (min-width: @tablet-width) {
+  .gallery__header {
+    min-width: 440px;
+    margin: 0 auto 80px;
+  }
+
+  .gallery__title {
+    font-size: 30px;
+    padding-top: 21px;
+    margin-bottom: 33px;
+  }
+
   .gallery__list {
     display: flex;
     flex-wrap: wrap;

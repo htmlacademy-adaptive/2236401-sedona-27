@@ -6,27 +6,6 @@
   padding: 38px 0 25px;
   margin: 0 auto;
   box-sizing: border-box;
-
-  @media (min-width: @tablet-width) {
-    padding: 43px 20px 30px;
-    min-height: 256px;
-  }
-
-  @media (min-width: @desctop-width) {
-    padding: 54px 20px 30px;
-  }
-}
-
-@media (min-width: @tablet-width) {
-  .card-advantages__text--has-order {
-    order: 2;
-  }
-}
-
-@media (max-width: @mobile-width-only) {
-  .card-advantages:first-child .card-advantages__text {
-    padding: 51px 0 37px;
-  }
 }
 
 .card-advantages__title {
@@ -36,12 +15,6 @@
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
-
-  @media (min-width: @tablet-width) {
-    margin: 0 auto 13px;
-    font-size: 21px;
-    max-width: 150px;
-  }
 }
 
 .card-advantages__index-number {
@@ -49,16 +22,6 @@
   margin: 0 auto 11px;
   font-size: 14px;
   line-height: 21px;
-
-  @media (min-width: @tablet-width) {
-    margin: 0 auto 22px;
-  }
-}
-
-@media (max-width: @mobile-width-only) {
-  .card-advantages:nth-child(2) .card-advantages__index-number {
-    margin-bottom: 17px;
-  }
 }
 
 .card-advantages__description {
@@ -67,13 +30,40 @@
   margin: 0 auto 11px;
   padding: 0;
   text-transform: uppercase;
+}
 
-  @media (min-width: @tablet-width) {
-    max-width: 195px;
+.card-advantages--has-image {
+  background-color: @color-background-basic;
+  color: @color-basic;
+}
+
+.card-advantages--simple {
+  background-color: @color-background-alternate;
+}
+
+.card-advantages--simple .card-advantages__text {
+  padding: 25px 0 14px;
+}
+
+.card-advantages--simple .card-advantages__index-number {
+  margin-bottom: 16px;
+}
+
+@media (max-width: @mobile-width-only) {
+  .card-advantages:first-child .card-advantages__text {
+    padding: 51px 0 37px;
   }
 
-  @media (min-width: @tablet-width) {
-    max-width: 275px;
+  .card-advantages:nth-child(2) .card-advantages__index-number {
+    margin-bottom: 17px;
+  }
+
+  .card-advantages--simple:not(:last-child) {
+    border-bottom: 1px solid @color-border-bottom;
+  }
+
+  .card-advantages:last-child .card-advantages__text {
+    padding-bottom: 18px;
   }
 }
 
@@ -83,70 +73,72 @@
   }
 }
 
-.card-advantages--has-image {
-  background-color: @color-background-basic;
-  color: @color-basic;
+@media (min-width: @tablet-width) {
+  .card-advantages__text {
+    padding: 43px 20px 30px;
+    min-height: 256px;
+  }
 
-  @media (min-width: @tablet-width) {
+  .card-advantages__text--has-order {
+    order: 2;
+  }
+
+  .card-advantages__title {
+    margin: 0 auto 13px;
+    font-size: 21px;
+    max-width: 150px;
+  }
+
+  .card-advantages__index-number {
+    margin: 0 auto 22px;
+  }
+
+  .card-advantages__description {
+    max-width: 195px;
+  }
+
+  .card-advantages--has-image {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
   }
-}
 
-.card-advantages--simple {
-  background-color: @color-background-alternate;
-
-  @media (min-width: @tablet-width) {
+  .card-advantages--simple {
     width: calc(100% / 3);
     box-sizing: border-box;
   }
-}
 
-@media (max-width: @mobile-width-only) {
-  .card-advantages--simple:not(:last-child) {
-    border-bottom: 1px solid @color-border-bottom;
-  }
-}
-
-@media (min-width: @tablet-width) {
   .card-advantages__wrapper {
     display: flex;
     width: 100%;
   }
-}
 
-.card-advantages--simple .card-advantages__text {
-  padding: 25px 0 14px;
-
-  @media (min-width: @tablet-width) {
+  .card-advantages--simple .card-advantages__text {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 35px 0 25px;
   }
-}
 
-.card-advantages--simple .card-advantages__index-number {
-  margin-bottom: 16px;
-
-  @media (min-width: @tablet-width) {
+  .card-advantages--simple .card-advantages__index-number {
     margin-bottom: 22px;
   }
-}
 
-@media (max-width: @mobile-width-only) {
-  .card-advantages:last-child .card-advantages__text {
-    padding-bottom: 18px;
-  }
-}
-
-@media (min-width: @tablet-width) {
   .card-advantages__picture {
     width: calc(100% / 3 * 2);
   }
 
   .card-advantages--has-image .card-advantages__text {
     width: calc(100% / 3);
+  }
+}
+
+@media (min-width: @desctop-width) {
+  .card-advantages__text {
+    padding: 54px 20px 30px;
+  }
+
+  .card-advantages__description {
+    max-width: 275px;
   }
 }

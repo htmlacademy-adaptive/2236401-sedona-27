@@ -14,10 +14,6 @@
   height: 50px;
   background-color: @color-basic;
   border: none;
-
-  @media (min-width: @tablet-width) {
-    display: none;
-  }
 }
 
 .main-nav--closed .main-nav__toggle::before {
@@ -103,6 +99,10 @@
 }
 
 @media (min-width: @tablet-width) {
+  .main-nav__toggle {
+    display: none;
+  }
+
   .main-nav__list {
     display: grid;
     grid-template-columns: repeat(5, 1fr);

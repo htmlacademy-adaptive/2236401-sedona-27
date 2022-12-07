@@ -6,27 +6,29 @@
 
 .sights__item {
   border-top: 1px solid @color-input-hover;
-
-  @media (min-width: @tablet-width) {
-    width: 50%;
-    border: none;
-  }
-
-  @media (min-width: @desctop-width) {
-    width: calc(100% / 3);
-  }
 }
 
 .sights__item:last-of-type {
   border-bottom: 1px solid @color-input-hover;
-
-  @media (min-width: @tablet-width) {
-    border: none;
-  }
 }
 
 @media (min-width: @tablet-width) {
+  .sights__item {
+    width: 50%;
+    border: none;
+  }
+
+  .sights__item:last-of-type {
+    border: none;
+  }
+
   .sights .sights__item:first-of-type {
     width: 100%;
+  }
+}
+
+@media (min-width: @desctop-width) {
+  .sights__item {
+    width: calc(100% / 3);
   }
 }

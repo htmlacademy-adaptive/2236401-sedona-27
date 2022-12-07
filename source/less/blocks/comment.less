@@ -5,10 +5,6 @@
 .comment__text {
   margin: 0;
   padding: 0;
-
-  @media (min-width: @desctop-width) {
-    padding-top: 6px;
-  }
 }
 
 .comment__textarea {
@@ -22,8 +18,16 @@
   background-color: @color-background-second;
   color: rgba(0, 0, 0, 0.3);
   font-weight: 700;
+}
 
-  @media (min-width: @tablet-width) {
+@media (min-width: @tablet-width) {
+  .comment__textarea {
     padding: 16px 16px 13px;
+  }
+}
+
+@media (min-width: @desctop-width) {
+  .comment__text {
+    padding-top: 6px;
   }
 }

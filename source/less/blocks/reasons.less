@@ -4,14 +4,6 @@
   margin: 0 auto 32px;
   text-transform: uppercase;
   position: relative;
-
-  @media (min-width: @tablet-width) {
-    margin: 0 auto 55px;
-  }
-
-  @media (min-width: @desctop-width) {
-    margin: 0 auto 45px;
-  }
 }
 
 .reasons__header::after {
@@ -19,13 +11,10 @@
   position: absolute;
   content: "";
   background: url("../img/divider-2.svg") no-repeat center bottom;
+  background-size: cover;
   height: 37px;
   width: 100%;
   bottom: -52px;
-
-  @media (min-width: @tablet-width) {
-    display: none;
-  }
 }
 
 .reasons__title {
@@ -34,12 +23,6 @@
   color: @color-basic-second;
   margin: 0 auto 35px;
   max-width: 265px;
-
-  @media (min-width: @tablet-width) {
-    font-size: 21px;
-    margin: 0 auto 27px;
-    max-width: 500px;
-  }
 }
 
 .reasons__intro {
@@ -47,8 +30,30 @@
   line-height: 21px;
   margin: 0 auto;
   max-width: 284px;
+}
 
-  @media (min-width: @tablet-width) {
+@media (min-width: @tablet-width) {
+  .reasons__header {
+    margin: 0 auto 55px;
+  }
+
+  .reasons__header::after {
+    display: none;
+  }
+
+  .reasons__title {
+    font-size: 21px;
+    margin: 0 auto 27px;
     max-width: 500px;
+  }
+
+  .reasons__intro {
+    max-width: 500px;
+  }
+}
+
+@media (min-width: @desctop-width) {
+  .reasons__header {
+    margin: 0 auto 45px;
   }
 }

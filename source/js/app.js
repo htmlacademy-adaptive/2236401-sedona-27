@@ -28,3 +28,19 @@ for (let i = 0; i < hearts.length; i++) {
     hearts[i].classList.toggle('count-likes__added');
   }
 };
+
+
+// const searchHotelLink = document.querySelector('.search-hotel-link');
+// const modal = document.querySelector('.modal-container');
+// const modalCloseButton = document.querySelector('.modal-close-button');
+
+// searchHotelLink.addEventListener('click', function (evt) {
+//     evt.preventDefault();
+//     modal.classList.add('modal-container--show');
+// });
+
+
+// modalCloseButton.addEventListener('click', function (evt) {
+//     evt.preventDefault();
+//     modal.classList.remove('modal-container--show');
+// });
