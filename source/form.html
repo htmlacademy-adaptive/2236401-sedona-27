@@ -31,7 +31,7 @@
                   Фото и видео
                 </a>
               </li>
-              <li class="site-list__item site-list__link--current">
+              <li class="site-list__item site-list__item--current">
                 <a class="site-list__link button">
                   Форма отзыва
                 </a>
@@ -95,13 +95,13 @@
                   <legend class="review-form__title">
                     Контактная информация:
                   </legend>
-                  <div class="data-in">
+                  <div class="data-in data-in--has-icon">
                     <label class="data-in__name" for="phone-number">
                       Контактный телефон*:
                     </label>
                     <input class="data-in__input" type="text" id="phone-number" name="phone" placeholder="Введите телефон" required>
                   </div>
-                  <div class="data-in">
+                  <div class="data-in data-in--has-icon">
                     <label class="data-in__name" for="email">
                       Электронная почта*:
                     </label>
@@ -110,7 +110,7 @@
                 </fieldset>
               </div>
               <div class="review-form__container">
-                <fieldset class="review-form__group review-form--has-border">
+                <fieldset class="review-form__group review-form__group--has-border">
                   <legend class="review-form__title">
                     Ваше общее впечатление:
                   </legend>
@@ -146,7 +146,7 @@
                 </fieldset>
               </div>
               <div class="review-form__container">
-                <fieldset class="review-form__group review-form--has-border">
+                <fieldset class="review-form__group review-form__group--has-border">
                   <legend class="review-form__title">
                     Посещённые достопримечательности:
                   </legend>
@@ -198,7 +198,7 @@
                   <textarea class="comment__textarea" rows="5" cols="25" name="comment" placeholder="Опишите подробно все свои восторги"></textarea>
                 </p>
               </div>
-              <button class="review__button button" type="submit">
+              <button class="review__button button button--change-state" type="submit">
                 Отправить отзыв
               </button>
               <p class="review-form__footnote">* — обязательные поля</p>
@@ -213,21 +213,21 @@
             #visitsedona
           </span>
           <ul class="main-footer__social social">
-            <li class="social__item button">
+            <li class="social__item button button--change-state">
               <span class="visually-hidden">
                 Мы в Вконтакте
               </span>
               <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
               </a>
             </li>
-            <li class="social__item button">
+            <li class="social__item button button--change-state">
               <span class="visually-hidden">
                 Мы в Телеграме
               </span>
               <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
               </a>
             </li>
-            <li class="social__item button">
+            <li class="social__item button button--change-state">
               <span class="visually-hidden">
                 Мы в Ютубе
               </span>
@@ -257,7 +257,7 @@
         </p>
       </div>
       <form class="modal__form">
-        <button class="modal__button modal__button--alert button" type="button">
+        <button class="modal__button modal__button--alert button button--change-state" type="button">
           Ok
         </button>
       </form>
@@ -272,7 +272,7 @@
         </p>
       </div>
       <form class="modal__form modal__form--confirm">
-        <button class="modal__button modal__button--confirm button" type="button">
+        <button class="modal__button modal__button--confirm button button--change-state" type="button">
           Закрыть окно
         </button>
       </form>

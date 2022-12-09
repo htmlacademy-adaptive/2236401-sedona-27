@@ -1,10 +1,24 @@
 .image-suggestion {
   margin: 0;
   padding: 0 20px;
+  position: relative;
 }
 
 .image-suggestion__unit {
   display: block;
   width: 100%;
   height: auto;
+}
+
+.image-suggestion::before {
+  display: block;
+  position: absolute;
+  content: "";
+  background-image: url("../img/catalog/polygon.svg");
+  background-repeat: no-repeat;
+  width: 48px;
+  height: 54px;
+  left: 50%;
+  bottom: 50%;
+  transform: translate(-50%, 50%);
 }

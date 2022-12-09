@@ -8,3 +8,23 @@
   cursor: pointer;
   border: none;
 }
+
+.button--change-state {
+  &:hover {
+    background-color: @color-button-hover;
+  }
+
+  &:active {
+    background-color: @color-button-down;
+    color: rgba(@color-basic, 0.3);
+  }
+
+  &:disabled {
+    background-color: @color-input-hover;
+    color: rgba(@color-basic, 0.3);
+  }
+}
+
+.button--change-state:active .social__link {
+  opacity: 0.3;
+}

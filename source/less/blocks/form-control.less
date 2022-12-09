@@ -8,6 +8,14 @@
   border-radius: 4px;
   cursor: pointer;
   display: inline-block;
+
+  &:hover {
+    background-color: @color-input-hover;
+  }
+
+  &:active {
+    background-color: @color-input-down;
+  }
 }
 
 .form-control__input[type="radio"] + .form-control__mark {
@@ -46,6 +54,10 @@
   width: 12px;
   left: 11px;
   top: 24px;
+}
+
+.form-control__input:focus ~ .form-control__mark {
+  background-color: @color-input-down;
 }
 
 .form-control__value {

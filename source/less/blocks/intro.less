@@ -2,11 +2,18 @@
   min-height: 389px;
   width: 100%;
   display: block;
-  background: url("../img/intro-bg-desctop.jpg") no-repeat center center;
+  background-image: url("../img/intro-bg-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
   background-position-y: 0;
   background-size: cover;
   background-color: @color-background-basic;
   position: relative;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/intro-bg-mobile@2x.jpg");
+    background-size: 1200px auto;
+  }
 }
 
 .intro--inner {
@@ -40,6 +47,15 @@
 }
 
 @media (min-width: @tablet-width) {
+  .intro {
+    background-image: url("../img/intro-bg-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/intro-bg-tablet@2x.jpg");
+      background-size: 1200px auto;
+    }
+  }
+
   .intro__text-image {
     width: 500px;
     height: 350px;
@@ -54,6 +70,15 @@
 }
 
 @media (min-width: @desctop-width) {
+  .intro {
+    background-image: url("../img/intro-bg-desctop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/intro-bg-desctop@2x.jpg");
+      background-size: 1200px auto;
+    }
+  }
+
   .intro__text-image--inner {
     padding: 46px 0 64px;
     width: 460px;
