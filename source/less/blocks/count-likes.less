@@ -2,6 +2,7 @@
   background-color: transparent;
   border: none;
   fill: rgba(@color-basic-second, 0.3);
+  cursor: pointer;
 }
 
 .count-likes__added {
@@ -17,6 +18,10 @@
 @media (min-width: @desctop-width) {
   .count-likes__icon {
     fill: @color-basic;
+  }
+
+  .count-likes__added {
+    fill: darken(#ff6347, 10%);
   }
 
   .count-likes__sum {
