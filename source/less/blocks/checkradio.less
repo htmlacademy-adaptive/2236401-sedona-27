@@ -1,0 +1,70 @@
+.checkradio__label {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  display: inline-block;
+  padding-left: 62px;
+  position: relative;
+  padding-top: 11px;
+  cursor: pointer;
+  min-height: 50px;
+  box-sizing: border-box;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 46px;
+    height: 46px;
+    display: block;
+    background-color: @color-background-second;
+    top: 0;
+    left: 0;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: @color-basic-tertiary;
+    top: 15px;
+    left: 15px;
+    display: none;
+  }
+}
+
+.checkradio__input:checked + .checkradio__label::after {
+  display: block;
+}
+
+.checkradio__input[type="radio"] + .checkradio__label::before,
+.checkradio__input[type="radio"] + .checkradio__label::after {
+  border-radius: 50%;
+}
+
+.checkradio__input[type="checkbox"] + .checkradio__label::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 10px;
+  border-left: 3px solid @color-basic-tertiary;
+  border-bottom: 3px solid @color-basic-tertiary;
+  transform: rotate(-45deg);
+  background-color: transparent;
+}
+
+.checkradio__label:hover::before {
+  background-color: @color-input-hover;
+}
+
+.checkradio__label:active::before {
+  background-color: @color-input-down;
+}
+
+.checkradio__label:active::after {
+  opacity: 0.3;
+}
+
+.checkradio__input:focus ~ .checkradio__label::before {
+  background-color: @color-input-down;
+}
