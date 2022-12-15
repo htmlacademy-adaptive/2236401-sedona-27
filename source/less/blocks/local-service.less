@@ -58,11 +58,6 @@
   max-width: 240px;
 }
 
-@media (min-width: @tablet-width) and (max-width: 1199px) {
-  .local-service__item--food .local-service__description {
-    max-width: 155px;
-  }
-}
 
 @media (min-width: @tablet-width) {
   .local-service {
@@ -84,7 +79,7 @@
   .local-service__item::before {
     left: 50%;
     top: -50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-48%, -40%);
     background-size: contain;
   }
 
@@ -109,7 +104,7 @@
   }
 
   .local-service__description {
-    max-width: 170px;
+    max-width: 180px;
   }
 
   .local-service__item--souvenir {
@@ -128,6 +123,10 @@
 
   .local-service__description {
     max-width: 260px;
+  }
+
+  .local-service__item::before {
+    transform: translate(-50%, -50%);
   }
 
   .local-service__item--housing {
