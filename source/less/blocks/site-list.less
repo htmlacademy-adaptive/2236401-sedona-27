@@ -22,7 +22,7 @@
 }
 
 @media (min-width: @tablet-width) {
-  .site-list__item:nth-child(3n + 3) {
+  .site-list__item:nth-child(4n + 3) {
     grid-column: 4 / 5;
   }
 
@@ -42,5 +42,13 @@
 
   .site-list__item--current .site-list__link {
     color: @color-link-current;
+  }
+
+  .site-list__link:hover {
+    opacity: 0.6;
+  }
+
+  .site-list__link:active {
+    opacity: 0.3;
   }
 }

@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple.png">
+    <link rel="manifest" href="manifest.webmanifest">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -86,7 +90,9 @@
                   </div>
                   <div class="card__actions count-likes">
                     <button class="count-likes__icon" type="button">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="23" height="21" viewBox="0 0 23 21"><path d="m12.964 3.78-.628 3.045-.627 2.625h9.096v2.205L17.773 18.9h-9.41V8.4l4.6-4.62ZM2.09 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.418.315-.627.84-.627 1.47v10.5c0 1.155.94 2.1 2.09 2.1h9.41c.836 0 1.568-.525 1.881-1.26l3.137-7.455c.104-.21.104-.525.104-.735v-2.1H23c0-1.155-.94-2.1-2.09-2.1h-6.587l1.045-4.83v-.315c0-.42-.209-.84-.418-1.155L13.8 0ZM4.182 8.4H0V21h4.182V8.4Z" /></svg>
+                      <svg class="count-likes__svg" width="23" height="21">
+                        <use href="img/sprite.svg#likes-icon"></use>
+                      </svg>
                     </button>
                     <span class="count-likes__sum">
                       1350
@@ -115,7 +121,9 @@
                   </div>
                   <div class="card__actions count-likes">
                     <button class="count-likes__icon" type="button">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="23" height="21"  viewBox="0 0 23 21"><path d="m12.964 3.78-.628 3.045-.627 2.625h9.096v2.205L17.773 18.9h-9.41V8.4l4.6-4.62ZM2.09 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.418.315-.627.84-.627 1.47v10.5c0 1.155.94 2.1 2.09 2.1h9.41c.836 0 1.568-.525 1.881-1.26l3.137-7.455c.104-.21.104-.525.104-.735v-2.1H23c0-1.155-.94-2.1-2.09-2.1h-6.587l1.045-4.83v-.315c0-.42-.209-.84-.418-1.155L13.8 0ZM4.182 8.4H0V21h4.182V8.4Z"/></svg>
+                      <svg class="count-likes__svg" width="23" height="21">
+                        <use href="img/sprite.svg#likes-icon"></use>
+                      </svg>
                     </button>
                     <span class="count-likes__sum">
                       143
@@ -144,7 +152,9 @@
                   </div>
                   <div class="card__actions count-likes">
                     <button class="count-likes__icon" type="button">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="23" height="21" viewBox="0 0 23 21"><path d="m12.964 3.78-.628 3.045-.627 2.625h9.096v2.205L17.773 18.9h-9.41V8.4l4.6-4.62ZM2.09 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.418.315-.627.84-.627 1.47v10.5c0 1.155.94 2.1 2.09 2.1h9.41c.836 0 1.568-.525 1.881-1.26l3.137-7.455c.104-.21.104-.525.104-.735v-2.1H23c0-1.155-.94-2.1-2.09-2.1h-6.587l1.045-4.83v-.315c0-.42-.209-.84-.418-1.155L13.8 0ZM4.182 8.4H0V21h4.182V8.4Z" /></svg>
+                      <svg class="count-likes__svg" width="23" height="21">
+                        <use href="img/sprite.svg#likes-icon"></use>
+                      </svg>
                     </button>
                     <span class="count-likes__sum">
                       96
@@ -173,7 +183,9 @@
                   </div>
                   <div class="card__actions count-likes">
                     <button class="count-likes__icon" type="button">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="23" height="21"  viewBox="0 0 23 21"><path d="m12.964 3.78-.628 3.045-.627 2.625h9.096v2.205L17.773 18.9h-9.41V8.4l4.6-4.62ZM2.09 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.418.315-.627.84-.627 1.47v10.5c0 1.155.94 2.1 2.09 2.1h9.41c.836 0 1.568-.525 1.881-1.26l3.137-7.455c.104-.21.104-.525.104-.735v-2.1H23c0-1.155-.94-2.1-2.09-2.1h-6.587l1.045-4.83v-.315c0-.42-.209-.84-.418-1.155L13.8 0ZM4.182 8.4H0V21h4.182V8.4Z" /></svg>
+                      <svg class="count-likes__svg" width="23" height="21">
+                        <use href="img/sprite.svg#likes-icon"></use>
+                      </svg>
                     </button>
                     <span class="count-likes__sum">
                       254
@@ -202,9 +214,9 @@
               <source media="(min-width: 768px)" srcset="img/catalog/video-tablet.jpg 1x, img/catalog/video-tablet@2x.jpg 2x">
               <img class="image-suggestion__unit" src="img/catalog/video-mobile.jpg" srcset="img/catalog/video-mobile@2x.jpg 2x" width="280" height="177" alt="Видеопрезентация города Седона.">
             </picture>
-            <a href="#" class="image-suggestion__link">
+            <button class="image-suggestion__button">
               <span class="visually-hidden">Смотреть видеопрезентацию города Седона.</span>
-            </a>
+            </button>
           </div>
         </section>
       </main>
@@ -236,12 +248,12 @@
               </a>
             </li>
           </ul>
-          <div class="main-footer__copyright copyright">
-            <b class="copyright__text">
-              Разработано:
-            </b>
+          <div class="main-footer__copyright main-footer__copyright--inner copyright">
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-              Логотип HTML-академии
+              Разработано
+              <svg class="copyright__logo" width="36" height="36">
+                <use href="img/sprite.svg#htmlacademy-logo"></use>
+              </svg>
             </a>
           </div>
         </div>

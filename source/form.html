@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple.png">
+    <link rel="manifest" href="manifest.webmanifest">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -169,14 +173,16 @@
                   </ul>
                 </fieldset>
               </div>
-              <fieldset class="review-form__container review-form__detailed review-form--has-border comment">
-                <legend class="review-form__title comment__title">
-                  Опишите свои эмоции:
-                </legend>
-                <p class="comment__text">
-                  <textarea class="comment__textarea" rows="5" cols="25" name="comment" placeholder="Опишите подробно все свои восторги"></textarea>
-                </p>
-              </fieldset>
+              <div class="review-form__container review-form__container--detailed">
+                <fieldset class="review-form__detailed review-form--has-border comment">
+                  <legend class="review-form__title comment__title">
+                    Опишите свои эмоции:
+                  </legend>
+                  <p class="comment__text">
+                    <textarea class="comment__textarea" rows="5" cols="25" name="comment" placeholder="Опишите подробно все свои восторги"></textarea>
+                  </p>
+                </fieldset>
+              </div>
               <button class="review__button button button--change-state" type="submit">
                 Отправить отзыв
               </button>
@@ -214,12 +220,12 @@
               </a>
             </li>
           </ul>
-          <div class="main-footer__copyright copyright">
-            <b class="copyright__text">
-              Разработано:
-            </b>
+          <div class="main-footer__copyright main-footer__copyright--inner copyright">
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-              Логотип HTML-академии
+              Разработано
+              <svg class="copyright__logo" width="36" height="36">
+                <use href="img/sprite.svg#htmlacademy-logo"></use>
+              </svg>
             </a>
           </div>
         </div>

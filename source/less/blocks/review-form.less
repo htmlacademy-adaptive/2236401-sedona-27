@@ -1,7 +1,12 @@
 .review-form__container {
   border-top: 1px solid @color-input-hover;
-  padding: 26px 20px 39px;
+  padding: 24px 20px 39px;
   color: @color-basic-second;
+}
+
+.review-form__container--detailed {
+  padding: 24px 20px 30px;
+  margin-bottom: 19px;
 }
 
 .review-form__contacts {
@@ -9,24 +14,25 @@
 }
 
 .review-form__impression .review-form__title {
-  margin-bottom: 12px;
+  margin-bottom: 18px;
 }
 
 .review-form__impression {
-  padding: 26px 20px 34px;
+  padding: 26px 20px 20px;
 }
 
 .review-form__sights-visited .review-form__title {
-  margin-bottom: 1px;
+  margin-bottom: 18px;
 }
 
 .review-form__sights-visited {
-  padding: 26px 20px 34px;
+  padding: 26px 20px 20px;
 }
 
 .review-form__detailed {
-  padding: 26px 20px 31px;
   border: none;
+  padding: 0;
+  margin: 0;
 }
 
 .review-form__group {
@@ -50,7 +56,7 @@
 .review-form__checkradio {
   display: flex;
   flex-direction: column;
-  gap: 9px;
+  gap: 12px;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -70,7 +76,7 @@
 
 @media (min-width: @tablet-width) and (max-width: 1199px) {
   .review-form__item {
-    width: calc(50% - 10px);
+    width: calc(50% - 12px);
     box-sizing: border-box;
   }
 
@@ -94,6 +100,21 @@
     border-top: none;
   }
 
+  .review-form__container--detailed {
+    padding: 19px 20px 30px;
+  }
+
+  .review-form__group--has-border,
+  .review-form--has-border {
+    border-top: 1px solid @color-decoration-elements;
+  }
+
+  .review-form__group--has-border .review-form__title,
+  .review-form--has-border .review-form__title {
+    max-width: 325px;
+    padding: 0 70px;
+  }
+
   .review-form__initials {
     padding: 26px 43px 32px 20px;
   }
@@ -103,23 +124,23 @@
   }
 
   .review-form__impression .review-form__title {
-    margin-bottom: 22px;
+    margin-bottom: 28px;
   }
 
   .review-form__impression {
-    padding: 24px 20px 34px;
+    padding: 30px 20px 20px;
   }
 
   .review-form__sights-visited .review-form__title {
-    margin-bottom: 11px;
+    margin-bottom: 27px;
   }
 
   .review-form__detailed {
-    padding: 18px 20px 31px;
+    padding: 0;
   }
 
   .review-form__container:last-of-type {
-    margin-bottom: 38px;
+    margin-bottom: 12px;
   }
 
   .review-form__container--is-half {
@@ -165,7 +186,7 @@
   }
 
   .review-form__sights-visited .review-form__checkradio {
-    padding: 0 84px;
+    padding: 0 72px 0 84px;
   }
 
   .review-form__footnote {
@@ -178,6 +199,10 @@
 @media (min-width: @desctop-width) {
   .review-form__container {
     padding: 26px 50px 39px 0;
+  }
+
+  .review-form__container--detailed {
+    padding: 26px 0 32px;
   }
 
   .review-form__contacts {
@@ -203,11 +228,7 @@
 
   .review-form__sights-visited {
     padding: 22px 24px 36px 21px;
-    margin-bottom: 31px;
-  }
-
-  .review-form__detailed {
-    padding: 18px 96px 31px;
+    margin-bottom: 21px;
   }
 
   .review-form__container:last-of-type {
@@ -243,17 +264,6 @@
 
   .review-form__sights-visited .review-form__checkradio {
     padding: 0 24px;
-  }
-
-  .review-form__group--has-border,
-  .review-form--has-border {
-    border-top: 1px solid @color-decoration-elements;
-  }
-
-  .review-form__group--has-border .review-form__title,
-  .review-form--has-border .review-form__title {
-    max-width: 300px;
-    padding: 0 70px;
   }
 
   .review-form__footnote {

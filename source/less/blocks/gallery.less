@@ -1,7 +1,7 @@
 .gallery__header {
   max-width: 280px;
   text-align: center;
-  margin: 0 auto 51px;
+  margin: 0 auto 36px;
   text-transform: uppercase;
 }
 
@@ -24,7 +24,7 @@
 
 @media (min-width: @tablet-width) {
   .gallery__header {
-    min-width: 440px;
+    max-width: 445px;
     margin: 0 auto 80px;
   }
 
@@ -37,5 +37,16 @@
   .gallery__list {
     display: flex;
     flex-wrap: wrap;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .gallery__header {
+    margin: 0 auto 89px;
+  }
+
+  .gallery__title {
+    padding-top: 53px;
+    margin-bottom: 32px;
   }
 }
