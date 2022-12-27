@@ -9,7 +9,7 @@
     <link rel="apple-touch-icon" href="img/favicons/apple.png">
     <link rel="manifest" href="manifest.webmanifest">
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
 
   <body class="page__body">
@@ -137,6 +137,10 @@
                 </div>
                 <div class="card-advantages__picture">
                   <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/index/devil-bridge-desctop.webp 1x, img/index/devil-bridge-desctop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/index/devil-bridge-tablet.webp 1x, img/index/devil-bridge-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/index/devil-bridge-mobile.webp 1x, img/index/devil-bridge-mobile@2x.webp 2x">
+
                     <source media="(min-width: 1200px)" srcset="img/index/devil-bridge-desctop.jpg 1x, img/index/devil-bridge-desctop@2x.jpg 2x">
                     <source media="(min-width: 768px)" srcset="img/index/devil-bridge-tablet.jpg 1x, img/index/devil-bridge-tablet@2x.jpg 2x">
                     <img class="card-advantages__image reasons-image" src="img/index/devil-bridge-mobile.jpg" srcset="img/index/devil-bridge-mobile@2x.jpg 2x" width="320" height="260" alt="Завораживающий вид моста Дьявола с высоты птичьего полёта.">
@@ -206,6 +210,10 @@
           <iframe class="city-map__image city-map__image--over" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3380999.518205091!2d-114.17316159878374!3d34.15254977821959!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b08ebcb4c186b%3A0x423927b17fc1cd71!2z0JDRgNC40LfQvtC90LAsINCh0KjQkA!5e0!3m2!1sru!2sby!4v1670144105658!5m2!1sru!2sby" width="320" height="350" allowfullscreen title="Седона – пустынный город в американском штате Аризона вблизи Флагстаффа, окруженный скальными останцами красного цвета, каньоном с крутыми стенами и сосновыми лесами.">
           </iframe>
           <picture>
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/index/map-desctop.webp 1x, img/index/map-desctop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/index/map-tablet.webp 1x, img/index/map-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/index/map-mobile.webp 1x, img/index/map-mobile@2x.webp 2x">
+
             <source media="(min-width: 1200px)" srcset="img/index/map-desctop.jpg 1x, img/index/map-desctop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/index/map-tablet.jpg 1x, img/index/map-tablet@2x.jpg 2x">
             <img class="city-map__image city-map__image--under" src="img/index/map-mobile.jpg" srcset="img/index/map-mobile@2x.jpg 2x" width="320" height="350" alt="Карта окрестности штата Аризона вблизи города Седона.">
@@ -244,7 +252,7 @@
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
               Разработано
               <svg class="copyright__logo" width="36" height="36">
-                <use href="img/sprite.svg#htmlacademy-logo"></use>
+                <use href="img/gulp-sprite/sprite.svg#htmlacademy"></use>
               </svg>
             </a>
           </div>
