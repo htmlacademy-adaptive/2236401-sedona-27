@@ -1,3 +1,5 @@
+// Мобильная версия меню (открытие/закрытие)
+
 let navMain = document.querySelector('.main-nav');
 let navToggle = document.querySelector('.main-nav__toggle');
 
@@ -14,33 +16,14 @@ navToggle.addEventListener('click', function () {
 });
 
 
+// Кнопка иконки лайк (catalog.html)
+
 let hearts = document.querySelectorAll('.count-likes__icon');
 let likesNumber = document.querySelectorAll('.count-likes__sum');
 
-for (let i = 0; i < hearts.length; i++) {
-  hearts[i].onclick = function () {
-    if (hearts[i].classList.contains('count-likes__added')) {
-      likesNumber[i].textContent--;
-    } else {
-        likesNumber[i].textContent++;
-      }
-
-    hearts[i].classList.toggle('count-likes__added');
-  }
-};
-
-
-// const searchHotelLink = document.querySelector('.search-hotel-link');
-// const modal = document.querySelector('.modal-container');
-// const modalCloseButton = document.querySelector('.modal-close-button');
-
-// searchHotelLink.addEventListener('click', function (evt) {
-//     evt.preventDefault();
-//     modal.classList.add('modal-container--show');
-// });
-
-
-// modalCloseButton.addEventListener('click', function (evt) {
-//     evt.preventDefault();
-//     modal.classList.remove('modal-container--show');
-// });
+hearts.forEach((heart, i) => {
+  heart.addEventListener('click', () => {
+  (heart.classList.contains('count-likes__added')) ? likesNumber[i].textContent-- : likesNumber[i].textContent++
+  heart.classList.toggle('count-likes__added')
+  })
+});
