@@ -52,6 +52,12 @@
   }
 }
 
+@media (min-width: @tablet-width) and (max-width: 1199px) {
+  .card:nth-child(2n+3) .card__caption {
+    background-color: @color-background-alternate;
+  }
+}
+
 @media (min-width: @desctop-width) {
   .card__view {
     display: grid;

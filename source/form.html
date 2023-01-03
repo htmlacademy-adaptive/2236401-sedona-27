@@ -236,35 +236,40 @@
 
       </footer>
     </div>
-    <div class="modal modal--alert">
-      <div class="modal__text modal__text--alert">
-        <h2 class="modal__title modal__title--alert">
-          Что-то пошло не так!
-        </h2>
-        <p class="modal__description modal__description--alert">
-          Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
-        </p>
+
+    <div class="modal-container">
+      <div class="modal modal--alert">
+        <div class="modal__text modal__text--alert">
+          <h2 class="modal__title modal__title--alert">
+            Что-то пошло не так!
+          </h2>
+          <p class="modal__description modal__description--alert">
+            Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
+          </p>
+        </div>
+        <form class="modal__form">
+          <button class="modal__button modal__button--alert button button--change-state" type="button">
+            Ok
+          </button>
+        </form>
       </div>
-      <form class="modal__form">
-        <button class="modal__button modal__button--alert button button--change-state" type="button">
-          Ok
-        </button>
-      </form>
     </div>
-    <div class="modal modal--confirm">
-      <div class="modal__text modal__text--confirm">
-        <h2 class="modal__title">
-          Ваш отзыв отправлен
-        </h2>
-        <p class="modal__description modal__description--confirm">
-          Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.
-        </p>
+    <div class="modal-container">
+      <div class="modal modal--confirm">
+        <div class="modal__text modal__text--confirm">
+          <h2 class="modal__title modal__title--confirm">
+            Ваш отзыв отправлен!
+          </h2>
+          <p class="modal__description modal__description--confirm">
+            Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.
+          </p>
+        </div>
+        <form class="modal__form modal__form--confirm">
+          <button class="modal__button modal__button--confirm button button--change-state" type="button">
+            Закрыть окно
+          </button>
+        </form>
       </div>
-      <form class="modal__form modal__form--confirm">
-        <button class="modal__button modal__button--confirm button button--change-state" type="button">
-          Закрыть окно
-        </button>
-      </form>
     </div>
     <script src="js/app.min.js"></script>
   </body>
