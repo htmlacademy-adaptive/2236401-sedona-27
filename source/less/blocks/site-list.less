@@ -51,4 +51,12 @@
   .site-list__link:active {
     opacity: 0.3;
   }
+
+  .site-list__link:focus-visible {
+    outline: none;
+    color: darken(@color-link-current, 15%);
+    text-shadow: 1px -1px 3px @color-button-down, 0 1px 3px @color-background-basic, -1px 0 10px @color-link-current;
+    transform: scale(1.2);
+    transition: all 0.2s;
+  }
 }
