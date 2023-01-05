@@ -78,23 +78,25 @@
                   <legend class="review-form__title">
                     Представьтесь:
                   </legend>
-                  <div class="data-in">
-                    <label class="data-in__name" for="name">
-                      Имя*:
-                    </label>
-                    <input class="data-in__input" type="text" id="name" name="name" value="Пётр" required>
-                  </div>
-                  <div class="data-in">
-                    <label class="data-in__name" for="surname">
-                      Фамилия*:
-                    </label>
-                    <input class="data-in__input" type="text" id="surname" name="surname" value="Пустота" required>
-                  </div>
-                  <div class="data-in">
-                    <label class="data-in__name" for="patronymic">
-                      Отчество:
-                    </label>
-                    <input class="data-in__input" type="text" id="patronymic" name="patronymic" value="Викторович">
+                  <div class="review-form__data-in-wrapper">
+                    <div class="data-in">
+                      <label class="data-in__name" for="name">
+                        Имя*:
+                      </label>
+                      <input class="data-in__input" type="text" id="name" name="name" value="Пётр" required>
+                    </div>
+                    <div class="data-in">
+                      <label class="data-in__name" for="surname">
+                        Фамилия*:
+                      </label>
+                      <input class="data-in__input" type="text" id="surname" name="surname" value="Пустота" required>
+                    </div>
+                    <div class="data-in">
+                      <label class="data-in__name" for="patronymic">
+                        Отчество:
+                      </label>
+                      <input class="data-in__input" type="text" id="patronymic" name="patronymic" value="Викторович">
+                    </div>
                   </div>
                 </fieldset>
               </div>
@@ -103,17 +105,19 @@
                   <legend class="review-form__title">
                     Контактная информация:
                   </legend>
-                  <div class="data-in data-in--has-icon">
-                    <label class="data-in__name" for="phone-number">
-                      Контактный телефон*:
-                    </label>
-                    <input class="data-in__input" type="text" id="phone-number" name="phone" placeholder="Введите телефон" required>
-                  </div>
-                  <div class="data-in data-in--has-icon">
-                    <label class="data-in__name" for="email">
-                      Электронная почта*:
-                    </label>
-                    <input class="data-in__input" type="text" id="email" name="user-email" placeholder="Введите e-mail" required>
+                  <div class="review-form__data-in-wrapper">
+                    <div class="data-in data-in--has-icon">
+                      <label class="data-in__name" for="phone-number">
+                        Контактный телефон*:
+                      </label>
+                      <input class="data-in__input" type="text" id="phone-number" name="phone" placeholder="Введите телефон" required>
+                    </div>
+                    <div class="data-in data-in--has-icon">
+                      <label class="data-in__name" for="email">
+                        Электронная почта*:
+                      </label>
+                      <input class="data-in__input" type="text" id="email" name="user-email" placeholder="Введите e-mail" required>
+                    </div>
                   </div>
                 </fieldset>
               </div>
@@ -149,7 +153,7 @@
                   <legend class="review-form__title">
                     Посещённые достопримечательности:
                   </legend>
-                  <ul class="review-form__checkradio">
+                  <ul class="review-form__checkradio review-form__checkradio--checkbox">
                     <li class="review-form__item checkradio">
                       <input class="checkradio__input visually-hidden" type="checkbox" name="visited-attractions" value="devil-bridge" id="devil-bridge" checked>
                       <label class="checkradio__label" for="devil-bridge">
