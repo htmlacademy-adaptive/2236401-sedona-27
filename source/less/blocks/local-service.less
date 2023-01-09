@@ -12,32 +12,6 @@
 .local-service__item {
   text-align: left;
   padding-top: 9px;
-  position: relative;
-}
-
-.local-service__item::before {
-  display: block;
-  content: "";
-  height: 40px;
-  width: 40px;
-  position: absolute;
-  background-repeat: no-repeat;
-  background-position: left top;
-}
-
-.local-service__item--housing::before {
-  background-image: url("../img/icons/icon-housing.svg");
-  transform: translate(-118%, -20%);
-}
-
-.local-service__item--food::before {
-  background-image: url("../img/icons/icon-food.svg");
-  transform: translate(-117%, -18%);
-}
-
-.local-service__item--souvenir::before {
-  background-image: url("../img/icons/icon-souvenir.svg");
-  transform: translate(-108%, -20%);
 }
 
 .local-service__title {
@@ -47,6 +21,32 @@
   font-size: 18px;
   line-height: 26px;
   max-width: 240px;
+  position: relative;
+}
+
+.local-service__title::before {
+  display: block;
+  content: "";
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+
+.local-service__title--housing::before {
+  background-image: url("../img/icons/icon-housing.svg");
+  transform: translate(-118%, -20%);
+}
+
+.local-service__title--food::before {
+  background-image: url("../img/icons/icon-food.svg");
+  transform: translate(-117%, -18%);
+}
+
+.local-service__title--souvenir::before {
+  background-image: url("../img/icons/icon-souvenir.svg");
+  transform: translate(-108%, -20%);
 }
 
 .local-service__description {
@@ -65,7 +65,7 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 0;
     width: 100%;
-    min-height: 300px;
+    min-height: 330px;
     padding: 150px 0 60px;
     box-sizing: border-box;
   }
@@ -76,39 +76,35 @@
     padding-top: 8px;
   }
 
-  .local-service__item::before {
-    left: 50%;
-    top: -50%;
-    transform: translate(-48%, -40%);
-    background-size: contain;
-  }
-
-  .local-service__item--housing::before {
-    width: 77px;
-    height: 72px;
-  }
-
-  .local-service__item--food::before {
-    width: 80px;
-    height: 68px;
-  }
-
-  .local-service__item--souvenir::before {
-    width: 67px;
-    height: 75px;
-  }
-
   .local-service__title {
     font-size: 21px;
     margin: 0 0 23px;
   }
 
-  .local-service__description {
-    max-width: 180px;
+  .local-service__title::before {
+    left: 50%;
+    top: -50%;
+    transform: translate(-50%, -120%);
+    background-size: contain;
   }
 
-  .local-service__item--souvenir {
-    padding-top: 4px;
+  .local-service__title--housing::before {
+    width: 77px;
+    height: 72px;
+  }
+
+  .local-service__title--food::before {
+    width: 80px;
+    height: 68px;
+  }
+
+  .local-service__title--souvenir::before {
+    width: 67px;
+    height: 75px;
+  }
+
+  .local-service__description {
+    max-width: 180px;
   }
 }
 
@@ -123,17 +119,5 @@
 
   .local-service__description {
     max-width: 290px;
-  }
-
-  .local-service__item::before {
-    transform: translate(-50%, -50%);
-  }
-
-  .local-service__item--housing {
-    padding-top: 11px;
-  }
-
-  .local-service__item--souvenir {
-    padding-top: 11px;
   }
 }
