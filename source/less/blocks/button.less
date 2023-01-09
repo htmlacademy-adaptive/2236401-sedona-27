@@ -23,6 +23,11 @@
     background-color: @color-input-hover;
     color: rgba(@color-basic, 0.3);
   }
+
+  &:focus-visible {
+    outline: none;
+    box-shadow: 0 0 4px 1px @color-basic-tertiary;
+  }
 }
 
 .button--change-state:active .social__link {

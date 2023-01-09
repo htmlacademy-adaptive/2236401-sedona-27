@@ -1,5 +1,8 @@
 .modal {
   background-color: @color-basic;
+  width: 320px;
+  margin: auto;
+  box-shadow: 0 7px 15px rgb(0 1 1 / 15%);
 }
 
 .modal__text {
@@ -9,7 +12,7 @@
 }
 
 .modal__text--alert {
-  padding: 53px 42px 35px;
+  padding: 53px 42px 21px;
   max-width: 238px;
 }
 
@@ -23,16 +26,15 @@
   font-size: 18px;
   line-height: 26px;
   color: @color-basic-second;
-  margin-bottom: 35px;
+  padding: 0;
+  margin: 0 auto 35px;
 }
 
 .modal__description {
   font-size: 14px;
   line-height: 21px;
-}
-
-.modal__description--alert {
-  margin-bottom: 21px;
+  padding: 0;
+  margin: 0;
 }
 
 .modal__description--confirm {
@@ -49,12 +51,73 @@
   padding: 18px 18px 14px;
   margin: 0 auto;
   font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
 }
 
 .modal__button--alert {
   width: 180px;
+  margin-bottom: 35px;
 }
 
-.margin__button--confirm {
+.modal__button--confirm {
   width: 280px;
+}
+
+@media (min-width: @tablet-width) {
+  .modal--alert {
+    width: 400px;
+  }
+
+  .modal--confirm {
+    width: 640px;
+  }
+
+  .modal__text--alert {
+    max-width: 300px;
+    margin-bottom: 26px;
+    padding: 56px 42px 21px;
+  }
+
+  .modal__text--confirm {
+    max-width: 420px;
+    padding: 60px 38px 0;
+  }
+
+  .modal__title {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 30px;
+  }
+
+  .modal__title--alert {
+    max-width: 250px;
+    margin-bottom: 23px;
+  }
+
+  .modal__title--confirm {
+    line-height: 26px;
+  }
+
+  .modal__description--confirm {
+    margin-bottom: 42px;
+  }
+
+  .modal__form--confirm {
+    padding: 44px;
+  }
+
+  .modal__button {
+    font-size: 21px;
+    line-height: 26px;
+  }
+
+  .modal__button--alert {
+    width: 272px;
+    margin-bottom: 41px;
+  }
+
+  .modal__button--confirm {
+    width: 458px;
+  }
 }

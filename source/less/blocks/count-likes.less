@@ -9,6 +9,11 @@
   &:hover:not(.count-likes__added) {
     fill: rgba(@color-basic-second, 0.6);
   }
+
+  &:focus-visible {
+    outline: none;
+    box-shadow: 0 0 3px 2px rgb(0 0 0 / 30%);
+  }
 }
 
 .count-likes__added {
@@ -33,6 +38,10 @@
 
     &:hover:not(.count-likes__added) {
       fill: rgba(@color-basic, 0.6);
+    }
+
+    &:focus-visible {
+      box-shadow: 0 0 3px 2px @color-basic;
     }
   }
 

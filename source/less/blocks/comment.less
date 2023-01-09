@@ -20,6 +20,11 @@
   color: rgba(0, 0, 0, 0.3);
   font-weight: 700;
   resize: none;
+
+  &:focus-visible {
+    outline: none;
+    box-shadow: 0 0 4px 1px @color-basic-tertiary;
+  }
 }
 
 @media (min-width: @tablet-width) {

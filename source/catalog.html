@@ -6,11 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="favicon.ico">
-    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="icon" href="img/favicons/32.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple.png">
     <link rel="manifest" href="manifest.webmanifest">
-    <title>HTML Academy: Седона</title>
+    <link rel="preload" href="fonts/ptsans.woff" as="font">
+    <link rel="preload" href="fonts/ptsans.woff2" as="font">
+    <link rel="preload" href="fonts/ptsansbold.woff" as="font">
+    <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
     <link rel="stylesheet" href="css/style.min.css">
+    <title>HTML Academy: Седона</title>
   </head>
 
   <body class="page__body">
@@ -80,7 +84,7 @@
 
                     <source media="(min-width: 1200px)" srcset="img/catalog/non-native-spaces-desctop.jpg 1x, img/catalog/non-native-spaces-desctop@2x.jpg 2x">
                     <source media="(min-width: 768px)" srcset="img/catalog/non-native-spaces-tablet.jpg 1x, img/catalog/non-native-spaces-tablet@2x.jpg 2x">
-                    <img class="image__unit" src="img/catalog/non-native-spaces-mobile.jpg" srcset="img/catalog/non-native-spaces-mobile@2x.jpg 2x" width="280" height="280" alt="Удивительные просторы Седоны на рассвете.">
+                    <img class="image__unit" src="img/catalog/non-native-spaces-mobile.jpg" srcset="img/catalog/non-native-spaces-mobile@2x.jpg 2x" width="280" height="280" loading="lazy" alt="Удивительные просторы Седоны на рассвете.">
                   </picture>
                 </a>
                 <figcaption class="card__caption">
@@ -115,7 +119,7 @@
 
                     <source media="(min-width: 1200px)" srcset="img/catalog/local-vegetation-desctop.jpg 1x, img/catalog/local-vegetation-desctop@2x.jpg 2x">
                     <source media="(min-width: 768px)" srcset="img/catalog/local-vegetation-tablet.jpg 1x, img/catalog/local-vegetation-tablet@2x.jpg 2x">
-                    <img class="image__unit" src="img/catalog/local-vegetation-mobile.jpg" srcset="img/catalog/local-vegetation-mobile@2x.jpg 2x" width="280" height="280" alt="Редкие виды местных растений.">
+                    <img class="image__unit" src="img/catalog/local-vegetation-mobile.jpg" srcset="img/catalog/local-vegetation-mobile@2x.jpg 2x" width="280" height="280" loading="lazy" alt="Редкие виды местных растений.">
                   </picture>
                 </a>
                 <figcaption class="card__caption">
@@ -150,7 +154,7 @@
 
                     <source media="(min-width: 1200px)" srcset="img/catalog/road-to-north-desctop.jpg 1x, img/catalog/road-to-north-desctop@2x.jpg 2x">
                     <source media="(min-width: 768px)" srcset="img/catalog/road-to-north-tablet.jpg 1x, img/catalog/road-to-north-tablet@2x.jpg 2x">
-                    <img class="image__unit" src="img/catalog/road-to-north-mobile.jpg" srcset="img/catalog/road-to-north-mobile@2x.jpg 2x" width="280" height="280" alt="Обзор дороги в холмистой местности.">
+                    <img class="image__unit" src="img/catalog/road-to-north-mobile.jpg" srcset="img/catalog/road-to-north-mobile@2x.jpg 2x" width="280" height="280" loading="lazy" alt="Обзор дороги в холмистой местности.">
                   </picture>
                 </a>
                 <figcaption class="card__caption">
@@ -185,7 +189,7 @@
 
                     <source media="(min-width: 1200px)" srcset="img/catalog/devil-bridge-desctop.jpg 1x, img/catalog/devil-bridge-desctop@2x.jpg 2x">
                     <source media="(min-width: 768px)" srcset="img/catalog/devil-bridge-tablet.jpg 1x, img/catalog/devil-bridge-tablet@2x.jpg 2x">
-                    <img class="image__unit" src="img/catalog/devil-bridge-mobile.jpg" srcset="img/catalog/devil-bridge-mobile@2x.jpg 2x" width="280" height="280" alt="Скалы, известные как мост Дьявола с высоты тичьего полёта.">
+                    <img class="image__unit" src="img/catalog/devil-bridge-mobile.jpg" srcset="img/catalog/devil-bridge-mobile@2x.jpg 2x" width="280" height="280" loading="lazy" alt="Скалы, известные как мост Дьявола с высоты тичьего полёта.">
                   </picture>
                 </a>
                 <figcaption class="card__caption">
@@ -232,7 +236,7 @@
 
               <source media="(min-width: 1200px)" srcset="img/catalog/video-desctop.jpg 1x, img/catalog/video-desctop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/catalog/video-tablet.jpg 1x, img/catalog/video-tablet@2x.jpg 2x">
-              <img class="image-suggestion__unit" src="img/catalog/video-mobile.jpg" srcset="img/catalog/video-mobile@2x.jpg 2x" width="280" height="177" alt="Видеопрезентация города Седона.">
+              <img class="image-suggestion__unit" src="img/catalog/video-mobile.jpg" srcset="img/catalog/video-mobile@2x.jpg 2x" width="280" height="177" loading="lazy" alt="Видеопрезентация города Седона.">
             </picture>
             <button class="image-suggestion__button">
               <span class="visually-hidden">Смотреть видеопрезентацию города Седона.</span>
@@ -279,6 +283,6 @@
         </div>
       </footer>
     </div>
-    <script src="js/app.js"></script>
+    <script src="js/app.min.js"></script>
   </body>
 </html>

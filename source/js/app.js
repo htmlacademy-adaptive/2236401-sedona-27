@@ -1,5 +1,20 @@
-let navMain = document.querySelector('.main-nav');
-let navToggle = document.querySelector('.main-nav__toggle');
+'use strict'
+
+const navMain = document.querySelector('.main-nav');
+const navToggle = document.querySelector('.main-nav__toggle');
+
+const hearts = document.querySelectorAll('.count-likes__icon');
+const likesNumber = document.querySelectorAll('.count-likes__sum');
+
+const confirmButton = document.querySelector('.modal__button--confirm');
+const alertButton = document.querySelector('.modal__button--alert');
+const confirmWindow =  document.querySelector('.modal-container--confirm');
+const alertWindow =  document.querySelector('.modal-container--alert');
+
+const form = document.querySelector('.review-form--js');
+
+
+// Мобильная версия меню (открытие/закрытие)
 
 navMain.classList.remove('main-nav--nojs');
 
@@ -14,33 +29,61 @@ navToggle.addEventListener('click', function () {
 });
 
 
-let hearts = document.querySelectorAll('.count-likes__icon');
-let likesNumber = document.querySelectorAll('.count-likes__sum');
+// Кнопка иконки лайк (catalog.html)
 
-for (let i = 0; i < hearts.length; i++) {
-  hearts[i].onclick = function () {
-    if (hearts[i].classList.contains('count-likes__added')) {
-      likesNumber[i].textContent--;
-    } else {
-        likesNumber[i].textContent++;
-      }
+hearts.forEach((heart, i) => {
+  heart.addEventListener('click', () => {
+  (heart.classList.contains('count-likes__added')) ? likesNumber[i].textContent-- : likesNumber[i].textContent++
+  heart.classList.toggle('count-likes__added')
+  })
+});
 
-    hearts[i].classList.toggle('count-likes__added');
+
+// Модальные окна (form.html)
+
+if (form) {
+  form.querySelectorAll('input').forEach(function(element){
+    if(element.hasAttribute('required')){
+      element.required = false;
+      element.classList.add('required');
+    }
+  })
+
+  function clearError() {
+    document.querySelectorAll('.data-in__input--is-error').forEach(function(element){
+      element.classList.remove('data-in__input--is-error');
+    });
   }
-};
 
+  form.addEventListener('submit', function(evt) {
+    evt.preventDefault();
+    let isError = false;
+    form.querySelectorAll('.required').forEach(function(element){
+      if (!element.value){
+        element.classList.add('data-in__input--is-error');
+        isError = true;
+      }
+    });
+    if (isError) {
+      alertWindow.classList.add('modal-container--is-shown');
+    } else {
+      form.reset();
+      document.querySelector('.modal-container--confirm').classList.add('modal-container--is-shown');
+    }
+  });
 
-// const searchHotelLink = document.querySelector('.search-hotel-link');
-// const modal = document.querySelector('.modal-container');
-// const modalCloseButton = document.querySelector('.modal-close-button');
+  confirmButton.addEventListener('click', function() {
+    confirmWindow.classList.remove('modal-container--is-shown');
+  });
 
-// searchHotelLink.addEventListener('click', function (evt) {
-//     evt.preventDefault();
-//     modal.classList.add('modal-container--show');
-// });
+  alertButton.addEventListener('click', function() {
+    alertWindow.classList.remove('modal-container--is-shown');
+    clearError();
+  });
+}
 
-
-// modalCloseButton.addEventListener('click', function (evt) {
-//     evt.preventDefault();
-//     modal.classList.remove('modal-container--show');
-// });
+document.addEventListener('click', function(evt){
+  if (evt.target.classList.contains('modal-container')) {
+    confirmWindow.classList.remove('modal-container--is-shown');
+  }
+});

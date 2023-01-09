@@ -8,6 +8,11 @@
   margin: 0;
   margin-bottom: 15px;
   padding: 0;
+
+  &:focus-visible {
+    outline: none;
+    opacity: 0.7;
+  }
 }
 
 .card__caption {
@@ -52,6 +57,12 @@
   }
 }
 
+@media (min-width: @tablet-width) and (max-width: 1199px) {
+  .card:nth-child(2n+3) .card__caption {
+    background-color: @color-background-alternate;
+  }
+}
+
 @media (min-width: @desctop-width) {
   .card__view {
     display: grid;
@@ -73,5 +84,19 @@
 
   .card__title {
     color: @color-basic;
+  }
+
+  .card:not(:first-of-type) .card__description {
+    padding-left: 5px;
+    padding-top: 9px;
+    line-height: 23px;
+  }
+
+  .card:not(:first-of-type) .card__caption {
+    padding: 9px 20px 3px;
+  }
+
+  .card:not(:first-of-type) .card__actions {
+    padding-top: 18px;
   }
 }
